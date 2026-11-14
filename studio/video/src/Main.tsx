@@ -4,6 +4,7 @@ import '@fontsource/montserrat/900.css';
 import '@fontsource/montserrat/700.css';
 import timeline from './timeline.json';
 import {DialogScene} from './Dialog';
+import {MapScene} from './MapStory';
 import {StoryScene} from './Story';
 
 type Scene = (typeof timeline.scenes)[number];
@@ -171,7 +172,8 @@ export const Main: React.FC = () => {
   const theme = (timeline as any).theme ?? 'schlaf';
   return (
     <AbsoluteFill style={{transform: `translateX(${shake}px)`}}>
-      {theme === 'story' ? <StoryScene frame={frame} fps={fps} />
+      {theme === 'map' ? <MapScene frame={frame} fps={fps} />
+        : theme === 'story' ? <StoryScene frame={frame} fps={fps} />
         : theme === 'dialog' ? <DialogScene frame={frame} fps={fps} />
         : theme === 'wasser' ? <WasserScene k={tired} frame={frame} fps={fps} />
         : theme === 'mond' ? <MondScene k={tired} moon={valAt(t, 'moon')} frame={frame} fps={fps} />
@@ -183,8 +185,8 @@ export const Main: React.FC = () => {
             <Character tired={tired} frame={frame} fps={fps} />
           </>
         )}
-      <Progress t={t} />
-      {!(i === 0 && (timeline as any).hookText) && <HourBadge scene={scene} local={local} fps={fps} />}
+      {/* полоска прогресса убрана по просьбе владельца */}
+      {theme !== 'map' && !(i === 0 && (timeline as any).hookText) && <HourBadge scene={scene} local={local} fps={fps} />}
       {theme !== 'dialog' && <Captions t={t} fps={fps} frame={frame} />}
       {theme !== 'dialog' && (timeline as any).showRu && (scene as any).ru && (
         <div style={{position: 'absolute', top: 1730, left: 40, right: 40, textAlign: 'center', fontFamily: FONT, fontWeight: 700, fontSize: 32, lineHeight: 1.25, color: '#fff', background: 'rgba(0,0,0,0.6)', padding: '10px 18px', borderRadius: 16}}>{(scene as any).ru}</div>

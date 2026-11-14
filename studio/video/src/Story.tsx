@@ -541,6 +541,20 @@ const CAMS: Record<string, number[][]> = {
   flight: [[540, 960, 1], [540, 900, 1.5], [540, 1000, 1.25], [540, 900, 1.35]],
   landing: [[540, 960, 1], [540, 1000, 1.5], [540, 960, 1.2], [540, 1000, 1.35]],
   police: [[540, 960, 1], [500, 960, 1.12], [420, 1060, 1.2], [480, 1000, 1.12], [540, 960, 1.08], [500, 1020, 1.1]],
+  whook: [[540, 960, 1.02], [540, 900, 1.1]],
+  ministry: [[540, 960, 1], [560, 900, 1.08], [700, 820, 1.12]],
+  toilet: [[540, 960, 1], [540, 860, 1.1], [540, 920, 1.06]],
+  roof: [[540, 960, 1], [480, 860, 1.2], [620, 900, 1.12]],
+  throw: [[540, 960, 1]],
+  cable: [[540, 960, 1]],
+  harness: [[540, 960, 1], [700, 960, 1.15]],
+  slide: [[540, 960, 1]],
+  west: [[540, 960, 1], [540, 900, 1.1]],
+  mum: [[540, 960, 1]],
+  dad: [[540, 960, 1], [560, 900, 1.15]],
+  dadslide: [[540, 960, 1]],
+  family: [[540, 960, 1], [540, 960, 1.08]],
+  endrope: [[540, 960, 1], [540, 1000, 1.2]],
 };
 
 // ---------- кинематографичная обёртка: медленный наезд, виньетка, зерно ----------
@@ -659,6 +673,20 @@ export const StoryScene: React.FC<{frame: number; fps: number}> = ({frame, fps})
     name === 'flight' ? <Flight {...p} /> :
     name === 'landing' ? <Landing {...p} /> :
     name === 'police' ? <Police {...p} /> :
+    name === 'whook' ? <WHook {...p} /> :
+    name === 'ministry' ? <Ministry {...p} /> :
+    name === 'toilet' ? <Toilet {...p} steps={sc.big === 'PSST'} /> :
+    name === 'roof' ? <Roof {...p} /> :
+    name === 'throw' ? <Throw {...p} /> :
+    name === 'cable' ? <Cable {...p} /> :
+    name === 'harness' ? <Harness {...p} /> :
+    name === 'slide' ? <SlideScene {...p} who="kid" /> :
+    name === 'west' ? <WestArrive {...p} /> :
+    name === 'mum' ? <SlideScene {...p} who="mum" /> :
+    name === 'dad' ? <DadAlone {...p} /> :
+    name === 'dadslide' ? <SlideScene {...p} who="dad" /> :
+    name === 'family' ? <Family {...p} /> :
+    name === 'endrope' ? <EndRope {...p} /> :
     <Cta {...p} />;
   return (
     <AbsoluteFill style={{background: '#000'}}>
@@ -1673,6 +1701,339 @@ const KEnd: React.FC<{t: number; local: number}> = ({t}) => (
       <rect x={560} y={420} width={420} height={820} rx={200} fill="#9fb3c4" stroke="#8a6a3a" strokeWidth={22} />
       <g transform="translate(770 980) scale(0.62)"><Voigt x={0} y={0} s={1} emo="smug" look={-1} uniform /></g>
       <Voigt x={300} y={1000} s={0.75} emo="ok" look={1} blink={Math.floor(t * 10) % 31 === 0} />
+    </svg>
+  </AbsoluteFill>
+);
+
+// ================== «Seilbahn 1965» (POV, 9 лет): семья Хольцапфель, трос с крыши Дома министерств ==================
+const KIDC = {sweater: '#f2b233', stripe: '#d0861b', hair: '#8a5226'};
+const Kid9: React.FC<{x: number; y: number; s?: number; emo?: string; look?: number; blink?: boolean; shiver?: number; glow?: string}> = (p) => <Teen {...p} {...KIDC} />;
+const blinkAt = (t: number, k = 37) => Math.floor(t * 10) % k === 0;
+
+// трос: от флагштока на крыше (FX,FY) до опоры на Западе (WX,WY)
+const FX = 300, FY = 560, WX = 1040, WY = 1150;
+const onCable = (p: number) => [FX + (WX - FX) * p, FY + (WY - FY) * p];
+const CABLE_ANG = Math.atan2(WY - FY, WX - FX) * 180 / Math.PI;
+
+// человек, висящий на ролике под тросом (who: kid / mum / dad)
+const Rider: React.FC<{x: number; y: number; who: 'kid' | 'mum' | 'dad'; emo?: string; t: number; sway?: number}> = ({x, y, who, emo = 'fear', t, sway = 1}) => {
+  const hs = who === 'kid' ? 0.2 : 0.24;
+  const r = 150 * hs;
+  const body = who === 'kid' ? '#f2b233' : who === 'mum' ? '#6a7fb8' : '#5d6670';
+  const hair = who === 'kid' ? '#8a5226' : who === 'mum' ? '#7a4a2a' : '#3b2a1f';
+  const skin = who === 'kid' ? '#ffd8a8' : '#f6c9a0';
+  const sw = Math.sin(t * 2.2) * 6 * sway;
+  const hy = 70 + r; // центр головы
+  const legs = Math.sin(t * 3) * 6;
+  return (
+    <g transform={`translate(${x} ${y})`}>
+      <circle r={14} fill="#c9ccd2" stroke={INK} strokeWidth={5} />
+      <g transform={`rotate(${sw})`}>
+        <line x1={0} y1={0} x2={-r * 0.9} y2={hy + r + 10} stroke="#c0392b" strokeWidth={7} />
+        <line x1={0} y1={0} x2={r * 0.9} y2={hy + r + 10} stroke="#c0392b" strokeWidth={7} />
+        {/* руки держатся за ремни */}
+        <path d={`M${-r * 0.8} ${hy + r + 20} L-10 ${30}`} stroke={INK} strokeWidth={10} strokeLinecap="round" />
+        <path d={`M${r * 0.8} ${hy + r + 20} L10 ${30}`} stroke={INK} strokeWidth={10} strokeLinecap="round" />
+        <rect x={-r * 0.85} y={hy + r - 4} width={r * 1.7} height={r * 1.9} rx={r * 0.5} fill={body} stroke={INK} strokeWidth={5} />
+        <rect x={-r * 0.95} y={hy + r * 2.1} width={r * 1.9} height={14} rx={6} fill="#c0392b" stroke={INK} strokeWidth={3} />
+        <path d={`M${-r * 0.4} ${hy + r * 2.8} l${-4 + legs} ${r * 1.4} M${r * 0.4} ${hy + r * 2.8} l${4 - legs} ${r * 1.4}`} stroke="#2b2b3a" strokeWidth={14} strokeLinecap="round" />
+        <g transform={`translate(0 ${hy}) scale(${hs})`}>
+          <circle r={150} fill={skin} stroke={INK} strokeWidth={12} />
+          <path d="M-150 -30 Q-140 -170 0 -165 Q140 -170 150 -30 Q110 -115 0 -110 Q-110 -115 -150 -30 Z" fill={hair} stroke={INK} strokeWidth={10} />
+          <g transform="translate(0 10)"><Face emo={emo} open={0} look={0} blink={blinkAt(t, 41)} skin={skin} /></g>
+        </g>
+      </g>
+    </g>
+  );
+};
+
+// общий ночной вид сбоку: слева Дом министерств, полоса, Стена, справа Запад
+const Panorama: React.FC<{t: number; cable?: number; children?: React.ReactNode; follow?: number[]; dawn?: number; relatives?: boolean}> = ({t, cable = 1, children, follow, dawn = 0, relatives = true}) => {
+  const [cx, cy, z] = follow ?? [540, 960, 1];
+  const tx = Math.min(0, Math.max(1080 - 1080 * z, 540 - cx * z));
+  const ty = Math.min(0, Math.max(1920 - 1920 * z, 820 - cy * z));
+  const [ex, ey] = onCable(cable);
+  const beam = Math.sin(t * 0.7) * 160;
+  return (
+    <AbsoluteFill style={{background: dawn ? 'linear-gradient(#3a4f8f, #f2a76a)' : 'linear-gradient(#0a1238, #24306a)'}}>
+      <svg width={1080} height={1920}>
+        <g transform={`translate(${tx} ${ty}) scale(${z})`}>
+          <Stars t={t} n={dawn ? 15 : 60} h={700} />
+          {/* огни Запада */}
+          {Array.from({length: 7}).map((_, i) => (
+            <g key={i}>
+              <rect x={700 + i * 60} y={900 + (i % 3) * 50} width={56} height={400} fill="#2c3566" stroke="#1a2048" strokeWidth={4} />
+              {[0, 1, 2, 3].map((k) => <rect key={k} x={712 + i * 60} y={930 + (i % 3) * 50 + k * 70} width={30} height={34} fill={(i + k) % 2 ? '#ffd76a' : '#ffb84d'} />)}
+            </g>
+          ))}
+          {/* Дом министерств */}
+          <rect x={-40} y={FY + 80} width={420} height={1300 - FY - 80} fill="#8c8fa0" stroke={INK} strokeWidth={8} />
+          {Array.from({length: 36}).map((_, i) => <rect key={i} x={-10 + (i % 6) * 64} y={FY + 120 + Math.floor(i / 6) * 95} width={38} height={60} fill={i === 33 ? '#ffe28a' : '#3a3f5c'} />)}
+          <rect x={-50} y={FY + 62} width={440} height={26} fill="#a6a9b8" stroke={INK} strokeWidth={6} />
+          {/* флагшток */}
+          <rect x={FX - 7} y={FY - 10} width={14} height={90} fill="#d8d8d8" stroke={INK} strokeWidth={4} />
+          {/* полоса и Стена */}
+          <rect x={-40} y={1300} width={1200} height={700} fill="#1c2033" />
+          <rect x={380} y={1240} width={250} height={60} fill="#e9d9a8" />
+          <rect x={620} y={1040} width={46} height={260} fill="#c9c9c2" stroke={INK} strokeWidth={6} />
+          <rect x={612} y={1028} width={62} height={22} rx={11} fill="#e0e0d8" stroke={INK} strokeWidth={5} />
+          <rect x={666} y={1240} width={500} height={60} fill="#3f7a4a" />
+          {/* вышка и плавно гуляющий прожектор */}
+          <path d={`M470 980 L${380 + beam} 1300 L${520 + beam} 1300 Z`} fill="rgba(255,248,190,0.22)" />
+          <rect x={458} y={990} width={24} height={250} fill="#a0a0a0" stroke={INK} strokeWidth={5} />
+          <rect x={432} y={940} width={76} height={56} rx={6} fill="#c4c4c4" stroke={INK} strokeWidth={5} />
+          <rect x={442} y={952} width={56} height={24} fill="#ffe28a" />
+          <text x={850} y={1225} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={44} fill="#bfe0ff">WEST</text>
+          <text x={150} y={1225} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={44} fill="#ffb3a8">OST</text>
+          {/* трос */}
+          {cable > 0 && <line x1={FX} y1={FY} x2={ex} y2={ey} stroke="#e8e8e8" strokeWidth={6} />}
+          {/* родственники на Западе */}
+          {relatives && [930, 1010].map((x, k) => <Person key={k} x={x} y={1150} s={0.75} c={k ? '#d36b4a' : '#4caf6a'} arms="up" face="ok" />)}
+          {children}
+        </g>
+      </svg>
+    </AbsoluteFill>
+  );
+};
+
+// 1. ХУК: крупно — ребёнок висит на тросе, далеко внизу Стена и прожектор
+const WHook: React.FC<{t: number; local: number; dur: number}> = ({t, local, dur}) => {
+  const slide = interpolate(local, [0, dur], [-60, 60], cl);
+  const beam = Math.sin(t * 0.8) * 200;
+  const sway = Math.sin(t * 2) * 4;
+  return (
+    <AbsoluteFill style={{background: 'linear-gradient(#0a1238, #2a3878)'}}>
+      <svg width={1080} height={1920}>
+        <Stars t={t} n={60} h={900} />
+        {/* далеко внизу: Стена, полоса, вышка */}
+        <rect x={0} y={1180} width={1080} height={740} fill="#1c2033" />
+        <rect x={0} y={1150} width={1080} height={50} fill="#e9d9a8" />
+        <rect x={0} y={1090} width={1080} height={60} fill="#c9c9c2" stroke={INK} strokeWidth={5} />
+        <rect x={0} y={1080} width={1080} height={16} rx={8} fill="#e0e0d8" />
+        <path d={`M230 1000 L${120 + beam} 1200 L${330 + beam} 1200 Z`} fill="rgba(255,248,190,0.25)" />
+        <rect x={218} y={1000} width={24} height={150} fill="#a0a0a0" stroke={INK} strokeWidth={5} />
+        <rect x={192} y={955} width={76} height={50} rx={6} fill="#c4c4c4" stroke={INK} strokeWidth={5} />
+        <rect x={202} y={965} width={56} height={22} fill="#ffe28a" />
+        {/* трос по диагонали */}
+        <line x1={-40} y1={420} x2={1120} y2={760} stroke="#ececec" strokeWidth={12} />
+        <g transform={`translate(${540 + slide} ${580 + slide * 0.293})`}>
+          <circle r={26} fill="#c9ccd2" stroke={INK} strokeWidth={7} />
+          <g transform={`rotate(${sway})`}>
+            <line x1={0} y1={0} x2={-120} y2={260} stroke="#c0392b" strokeWidth={14} />
+            <line x1={0} y1={0} x2={120} y2={260} stroke="#c0392b" strokeWidth={14} />
+            <Kid9 x={0} y={350} s={0.62} emo="fear" look={0.5} blink={blinkAt(t)} />
+            <path d="M-80 470 L-20 40 M80 470 L20 40" stroke={INK} strokeWidth={22} strokeLinecap="round" />
+          </g>
+        </g>
+      </svg>
+    </AbsoluteFill>
+  );
+};
+
+// 2. Дом министерств вечером, сразу за ним Стена (12 м)
+const Ministry: React.FC<{t: number; local: number}> = ({t, local}) => (
+  <AbsoluteFill style={{background: 'linear-gradient(#6f86c9, #f2b98a)'}}>
+    <svg width={1080} height={1920}>
+      <rect x={40} y={430} width={700} height={560} fill="#9b9eae" stroke={INK} strokeWidth={8} />
+      {Array.from({length: 30}).map((_, i) => <rect key={i} x={70 + (i % 10) * 66} y={470 + Math.floor(i / 10) * 140} width={36} height={70} fill="#3a3f5c" />)}
+      <rect x={30} y={410} width={720} height={30} fill="#b3b6c4" stroke={INK} strokeWidth={6} />
+      <rect x={270} y={330} width={14} height={90} fill="#d8d8d8" stroke={INK} strokeWidth={4} />
+      <rect x={880} y={720} width={60} height={270} fill="#c9c9c2" stroke={INK} strokeWidth={7} />
+      <rect x={870} y={705} width={80} height={24} rx={12} fill="#e0e0d8" stroke={INK} strokeWidth={5} />
+      <g opacity={interpolate(local, [1, 1.6], [0, 1], cl)}>
+        <path d="M750 650 H870" stroke="#ffd84d" strokeWidth={8} />
+        <path d="M750 650 l20 -14 v28 Z M870 650 l-20 -14 v28 Z" fill="#ffd84d" />
+        <Label x={810} y={620} text="12 m" size={56} />
+      </g>
+      <rect x={70} y={905} width={640} height={70} rx={10} fill="#2b2f45" stroke={INK} strokeWidth={5} /><Label x={390} y={955} text="HAUS DER MINISTERIEN" size={40} c="white" />
+      <rect x={0} y={990} width={1080} height={930} fill="#5b5f6c" />
+      <Adult x={250} y={1080} s={0.5} emo="nervous" look={1} blink={blinkAt(t, 43)} />
+      <Adult x={830} y={1080} s={0.5} mum emo="nervous" look={-1} blink={blinkAt(t, 47)} />
+      <Kid9 x={540} y={1140} s={0.45} emo={local > 4 ? 'shock' : 'nervous'} look={1} blink={blinkAt(t)} />
+    </svg>
+  </AbsoluteFill>
+);
+
+// 3–4. туалет изнутри: засов, табличка, шаги за дверью (тень в щели)
+const Toilet: React.FC<{t: number; local: number; dur: number; steps?: boolean}> = ({t, local, dur, steps}) => {
+  const bolt = steps ? 1 : interpolate(local, [0.8, 1.6], [0, 1], cl);
+  const shadow = steps ? interpolate(local, [1.2, dur - 0.5], [-200, 1300], cl) : -999;
+  return (
+    <AbsoluteFill style={{background: '#cfe3ea'}}>
+      <svg width={1080} height={1920}>
+        {Array.from({length: 13 * 9}).map((_, i) => <rect key={i} x={(i % 9) * 122} y={Math.floor(i / 9) * 122} width={118} height={118} fill={(i % 9 + Math.floor(i / 9)) % 2 ? '#e4f1f4' : '#d3e7ee'} />)}
+        {/* дверь */}
+        <rect x={300} y={420} width={480} height={780} fill="#8a5a36" stroke={INK} strokeWidth={10} />
+        <rect x={340} y={600} width={400} height={160} fill="#9b6a43" stroke={INK} strokeWidth={6} />
+        <rect x={340} y={780} width={400} height={360} fill="#9b6a43" stroke={INK} strokeWidth={6} />
+        {/* засов */}
+        <rect x={600} y={760} width={150} height={30} rx={10} fill="#b8bcc4" stroke={INK} strokeWidth={5} />
+        <rect x={600 + bolt * 110} y={748} width={60} height={54} rx={8} fill="#d8dbe0" stroke={INK} strokeWidth={5} />
+        <rect x={780} y={755} width={40} height={40} fill="#b8bcc4" stroke={INK} strokeWidth={5} />
+        {/* табличка */}
+        <g transform="translate(540 520) rotate(-3)">
+          <rect x={-170} y={-50} width={340} height={100} rx={10} fill="#f4ecd2" stroke={INK} strokeWidth={6} />
+          <text x={0} y={18} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={44} fill="#c0392b">GESCHLOSSEN</text>
+        </g>
+        {/* щель под дверью и тень шагов */}
+        <rect x={300} y={1200} width={480} height={18} fill="#ffe9a8" />
+        {steps && <rect x={shadow} y={1200} width={160} height={18} fill="#3a2a1a" />}
+        <rect x={0} y={1218} width={1080} height={702} fill="#9fb6bf" />
+        <Adult x={170} y={960} s={0.5} emo={steps ? 'fear' : 'nervous'} look={1} blink={blinkAt(t, 43)} />
+        <Adult x={910} y={960} s={0.5} mum emo={steps ? 'fear' : 'nervous'} look={-1} blink={blinkAt(t, 47)} />
+        <Kid9 x={540} y={1090} s={0.42} emo={steps ? 'fear' : 'nervous'} look={0} blink={blinkAt(t)} shiver={steps ? Math.sin(t * 30) * 2 : 0} />
+      </svg>
+    </AbsoluteFill>
+  );
+};
+
+// 5. крыша ночью, отец подаёт знак фонариком на Запад (плавная пульсация, без вспышек)
+const Roof: React.FC<{t: number; local: number}> = ({t, local}) => {
+  const glow = 0.35 + 0.25 * Math.sin(local * 2.2);
+  return (
+    <AbsoluteFill style={{background: 'linear-gradient(#0a1238, #2a3878)'}}>
+      <svg width={1080} height={1920}>
+        <Stars t={t} n={70} h={800} />
+        {Array.from({length: 8}).map((_, i) => (
+          <g key={i}>
+            <rect x={560 + i * 66} y={720 + (i % 3) * 40} width={60} height={400} fill="#2c3566" />
+            {[0, 1, 2].map((k) => <rect key={k} x={575 + i * 66} y={750 + (i % 3) * 40 + k * 80} width={30} height={40} fill="#ffd76a" />)}
+          </g>
+        ))}
+        <rect x={0} y={1100} width={1080} height={820} fill="#4a4e60" />
+        <rect x={0} y={1090} width={1080} height={24} fill="#6a6e80" />
+        <rect x={120} y={500} width={14} height={600} fill="#d8d8d8" stroke={INK} strokeWidth={4} />
+        <path d={`M560 760 L1100 560 L1100 960 Z`} fill={`rgba(255,240,170,${glow})`} />
+        <Adult x={390} y={860} s={0.6} emo="nervous" look={1} blink={blinkAt(t, 43)} />
+        <rect x={500} y={740} width={70} height={40} rx={8} fill="#2b2b3a" stroke={INK} strokeWidth={5} />
+        <circle cx={572} cy={760} r={18} fill="#fff3b0" />
+        <Kid9 x={760} y={1150} s={0.4} emo="nervous" look={1} blink={blinkAt(t)} />
+        <Label x={820} y={680} text="WEST" size={56} c="#bfe0ff" />
+      </svg>
+    </AbsoluteFill>
+  );
+};
+
+// 6. молоток со шнуром летит через Стену
+const Throw: React.FC<{t: number; local: number; dur: number}> = ({t, local, dur}) => {
+  const k = interpolate(local, [0.6, Math.min(3, dur - 0.5)], [0, 1], cl);
+  const hx = FX + 110 + (870 - FX) * k;
+  const hy = FY - 40 + (1150 - FY) * k - Math.sin(k * Math.PI) * 260;
+  return (
+    <Panorama t={t} cable={0} relatives follow={[hx, hy + interpolate(k, [0, 0.35], [-120, 150], cl), interpolate(k, [0, 0.5, 1], [1.6, 1.35, 1.7])]}>
+      <Person x={FX + 30} y={FY - 30} s={0.6} c="#5d6670" arms="up" face="ok" />
+      <path d={`M${FX + 30} ${FY - 60} Q${(FX + hx) / 2} ${Math.min(FY, hy) - 200 * k} ${hx} ${hy}`} stroke="#fff3b0" strokeWidth={5} fill="none" />
+      <g transform={`translate(${hx} ${hy}) rotate(${local * 300}) scale(1.8)`}>
+        <rect x={-6} y={-30} width={12} height={60} fill="#a8743f" stroke={INK} strokeWidth={3} />
+        <rect x={-22} y={-38} width={44} height={20} fill="#8a8f99" stroke={INK} strokeWidth={3} />
+      </g>
+    </Panorama>
+  );
+};
+
+// 7. родители тянут стальной трос и крепят к флагштоку
+const Cable: React.FC<{t: number; local: number; dur: number}> = ({t, local, dur}) => {
+  const k = interpolate(local, [0.3, dur * 0.7], [0, 1], cl);
+  const pull = Math.sin(t * 5) * 8;
+  return (
+    <Panorama t={t} cable={0} follow={[interpolate(k, [0, 1], [900, FX + 60]), interpolate(k, [0, 1], [1050, FY + 40]), interpolate(k, [0, 0.5, 1], [1.6, 1.15, 1.6])]}>
+      {/* трос подтягивается от Запада к крыше */}
+      <line x1={WX} y1={WY} x2={WX + (FX - WX) * k} y2={WY + (FY - WY) * k + Math.sin(k * Math.PI) * 120} stroke="#e8e8e8" strokeWidth={6} />
+      <Person x={FX - 60 + pull} y={FY - 40} s={0.6} c="#5d6670" arms="hold" face="fear" />
+      <Person x={FX + 70 - pull} y={FY - 40} s={0.6} c="#6a7fb8" hair="#7a4a2a" arms="hold" face="fear" />
+    </Panorama>
+  );
+};
+
+// 8. на крыше: отец смотрит на сына, «ты первый»
+const Harness: React.FC<{t: number; local: number}> = ({t, local}) => (
+  <AbsoluteFill style={{background: 'linear-gradient(#0a1238, #2a3878)'}}>
+    <svg width={1080} height={1920}>
+      <Stars t={t} n={60} h={700} />
+      <line x1={-20} y1={380} x2={1100} y2={1000} stroke="#ececec" strokeWidth={12} />
+      <rect x={0} y={1180} width={1080} height={740} fill="#4a4e60" />
+      <Adult x={290} y={860} s={0.75} emo="sad" look={1} blink={blinkAt(t, 43)} />
+      <Kid9 x={760} y={1000} s={0.6} emo={local > 1.5 ? 'fear' : 'nervous'} look={-1} blink={blinkAt(t)} />
+      <rect x={640} y={1180} width={240} height={34} rx={10} fill="#c0392b" stroke={INK} strokeWidth={5} />
+    </svg>
+  </AbsoluteFill>
+);
+
+// 9 / 11 / 13. спуск по тросу, камера следует за человеком
+const SlideScene: React.FC<{t: number; local: number; dur: number; who: 'kid' | 'mum' | 'dad'}> = ({t, local, dur, who}) => {
+  const p = interpolate(local, [0.2, dur - 0.3], [0.02, 0.9], cl);
+  const shake = who === 'mum' ? Math.sin(t * 18) * 4 : 0;
+  const [x, y] = onCable(p);
+  return (
+    <Panorama t={t} follow={[x, y + 120, 1.75]}>
+      <Rider x={x} y={y + shake} who={who} emo={p > 0.75 ? 'laugh' : 'fear'} t={t} />
+      {who !== 'kid' && <Kid9 x={985} y={1120} s={0.12} emo="nervous" look={-1} />}
+    </Panorama>
+  );
+};
+
+// 10. Запад: родственники ловят, ребёнок смеётся (развязка)
+const WestArrive: React.FC<{t: number; local: number}> = ({t, local}) => (
+  <AbsoluteFill style={{background: 'linear-gradient(#2c3a7a, #f2a76a)'}}>
+    <svg width={1080} height={1920}>
+      <circle cx={540} cy={780} r={420} fill="#ffd84d" opacity={0.35} />
+      <rect x={0} y={1200} width={1080} height={720} fill="#3f7a4a" />
+      <Adult x={210} y={980} s={0.55} emo="laugh" look={1} blink={blinkAt(t, 43)} />
+      <Adult x={870} y={980} s={0.55} mum emo="laugh" look={-1} blink={blinkAt(t, 47)} />
+      <Kid9 x={540} y={1000 - Math.abs(Math.sin(local * 4)) * 20} s={0.7} emo="laugh" blink={blinkAt(t)} />
+      <Label x={540} y={520} text="WEST-BERLIN" size={60} c="white" />
+    </svg>
+  </AbsoluteFill>
+);
+
+// 12. отец один на крыше
+const DadAlone: React.FC<{t: number; local: number}> = ({t}) => {
+  const beam = Math.sin(t * 0.7) * 260;
+  return (
+    <AbsoluteFill style={{background: 'linear-gradient(#0a1238, #2a3878)'}}>
+      <svg width={1080} height={1920}>
+        <Stars t={t} n={60} h={800} />
+        <path d={`M900 1300 L${620 + beam} 200 L${820 + beam} 200 Z`} fill="rgba(255,248,190,0.16)" />
+        <line x1={240} y1={560} x2={1100} y2={1050} stroke="#ececec" strokeWidth={10} />
+        <rect x={232} y={540} width={16} height={700} fill="#d8d8d8" stroke={INK} strokeWidth={4} />
+        <rect x={0} y={1230} width={1080} height={690} fill="#4a4e60" />
+        <Adult x={560} y={900} s={0.8} emo="fear" look={1} blink={blinkAt(t, 43)} />
+      </svg>
+    </AbsoluteFill>
+  );
+};
+
+// 14. новая жизнь: Мюнхен, вся семья вместе
+const Family: React.FC<{t: number; local: number}> = ({t}) => (
+  <AbsoluteFill style={{background: 'linear-gradient(#7fb6f0, #ffe3b3)'}}>
+    <svg width={1080} height={1920}>
+      <circle cx={820} cy={420} r={110} fill="#ffd84d" />
+      {/* силуэт с двумя башнями-куполами */}
+      {[380, 700].map((x) => (
+        <g key={x}>
+          <rect x={x - 55} y={560} width={110} height={420} fill="#b2603f" stroke={INK} strokeWidth={6} />
+          <path d={`M${x - 55} 560 Q${x - 55} 450 ${x} 440 Q${x + 55} 450 ${x + 55} 560 Z`} fill="#4f8a6a" stroke={INK} strokeWidth={6} />
+        </g>
+      ))}
+      <rect x={200} y={760} width={680} height={180} fill="#c97a55" stroke={INK} strokeWidth={6} />
+      <Label x={540} y={870} text="MÜNCHEN" size={64} c="white" />
+      <rect x={0} y={1180} width={1080} height={740} fill="#8a8f99" />
+      <Adult x={210} y={1110} s={0.5} emo="laugh" look={1} blink={blinkAt(t, 43)} />
+      <Adult x={870} y={1110} s={0.5} mum emo="laugh" look={-1} blink={blinkAt(t, 47)} />
+      <Kid9 x={540} y={1130} s={0.5} emo="laugh" blink={blinkAt(t)} />
+    </svg>
+  </AbsoluteFill>
+);
+
+// 15. кольцо: рассвет, трос всё ещё над Стеной, мальчик смотрит вверх
+const EndRope: React.FC<{t: number; local: number}> = ({t, local}) => (
+  <AbsoluteFill style={{background: 'linear-gradient(#3a4f8f, #f2a76a)'}}>
+    <svg width={1080} height={1920}>
+      <line x1={-20} y1={420} x2={1100} y2={760} stroke="#ececec" strokeWidth={10} />
+      <rect x={0} y={880} width={1080} height={70} fill="#c9c9c2" stroke={INK} strokeWidth={5} />
+      <rect x={0} y={870} width={1080} height={16} rx={8} fill="#e0e0d8" />
+      <rect x={0} y={950} width={1080} height={970} fill="#3f7a4a" />
+      <Kid9 x={540} y={1070} s={0.75} emo="laugh" look={0} blink={blinkAt(t)} />
     </svg>
   </AbsoluteFill>
 );

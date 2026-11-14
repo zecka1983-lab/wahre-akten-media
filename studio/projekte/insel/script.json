@@ -1,0 +1,100 @@
+{
+ "title": "Warum war West-Berlin eine Insel?",
+ "theme": "map",
+ "hook_text": "",
+ "music": {
+  "mood": "mystery",
+  "resolve": "fall",
+  "tick": [
+   "blockade"
+  ],
+  "pulse": [
+   "wall"
+  ],
+  "riser": [
+   "airlift"
+  ],
+  "hit": true,
+  "swoosh": false
+ },
+ "scenes": [
+  {
+   "cut": "hook",
+   "text": "Du lebst im Westen. Aber ringsum ist nur DDR.",
+   "ru": "Ты живёшь на Западе. Но вокруг одна ГДР."
+  },
+  {
+   "cut": "facts",
+   "text": "Das ist West-Berlin. Rund zwei Millionen Menschen, über hundert Kilometer vom Rest der Bundesrepublik entfernt.",
+   "ru": "Это Западный Берлин. Около двух миллионов человек, больше ста километров до остальной ФРГ.",
+   "caption": "Das ist West-Berlin. Rund 2 Millionen Menschen, über 100 Kilometer vom Rest der Bundesrepublik entfernt."
+  },
+  {
+   "cut": "why",
+   "text": "Wie kam eine Stadt in so eine Lage?",
+   "ru": "Как город оказался в таком положении?"
+  },
+  {
+   "cut": "zones",
+   "text": "Neunzehnhundertfünfundvierzig teilen die Sieger Deutschland auf. Berlin liegt mitten in der sowjetischen Zone.",
+   "ru": "В 1945 году победители делят Германию. Берлин оказывается посреди советской зоны.",
+   "caption": "1945 teilen die Sieger Deutschland auf. Berlin liegt mitten in der sowjetischen Zone."
+  },
+  {
+   "cut": "sectors",
+   "text": "Auch die Stadt wird geteilt. Den Westteil bekommen Amerikaner, Briten und Franzosen.",
+   "ru": "Делят и сам город. Западную часть получают американцы, британцы и французы."
+  },
+  {
+   "cut": "blockade",
+   "text": "Neunzehnhundertachtundvierzig sperrt die Sowjetunion alle Straßen und Bahnen nach West-Berlin. Die Stadt soll aufgeben.",
+   "ru": "В 1948 году Советский Союз перекрывает все дороги и железные дороги в Западный Берлин. Город должен сдаться.",
+   "caption": "1948 sperrt die Sowjetunion alle Straßen und Bahnen nach West-Berlin. Die Stadt soll aufgeben."
+  },
+  {
+   "cut": "airlift",
+   "text": "Die Antwort kommt von oben. Elf Monate lang landen Flugzeuge mit Kohle und Mehl, fast zweihundertachtzigtausend Flüge.",
+   "ru": "Ответ приходит сверху. Одиннадцать месяцев самолёты везут уголь и муку, почти двести восемьдесят тысяч рейсов.",
+   "caption": "Die Antwort kommt von oben. 11 Monate lang landen Flugzeuge mit Kohle und Mehl, fast 280.000 Flüge."
+  },
+  {
+   "cut": "candy",
+   "text": "Manche Piloten werfen Süßigkeiten für die Kinder ab. Die Berliner nennen sie Rosinenbomber.",
+   "ru": "Некоторые пилоты сбрасывают детям сладости. Берлинцы называют их «изюмными бомбардировщиками»."
+  },
+  {
+   "cut": "fail",
+   "text": "Die Blockade scheitert. Im Mai neunzehnhundertneunundvierzig sind die Straßen wieder offen.",
+   "ru": "Блокада проваливается. В мае 1949 года дороги снова открыты.",
+   "caption": "Die Blockade scheitert. Im Mai 1949 sind die Straßen wieder offen."
+  },
+  {
+   "cut": "wall",
+   "text": "Neunzehnhunderteinundsechzig kommt die Mauer. Hundertfünfundfünfzig Kilometer, einmal rund um West-Berlin.",
+   "ru": "В 1961 году появляется Стена. Сто пятьдесят пять километров, кольцом вокруг Западного Берлина.",
+   "caption": "1961 kommt die Mauer. 155 Kilometer, einmal rund um West-Berlin."
+  },
+  {
+   "cut": "stein",
+   "text": "Es gibt sogar eine Insel in der Insel: das Dorf Steinstücken. Amerikanische Soldaten kommen bis neunzehnhundertzweiundsiebzig nur per Hubschrauber hin.",
+   "caption": "Es gibt sogar eine Insel in der Insel: das Dorf Steinstücken. Amerikanische Soldaten kommen bis 1972 nur per Hubschrauber hin.",
+   "ru": "Есть даже остров внутри острова: деревня Штайнштюккен. Американские солдаты до 1972 года добираются туда только на вертолёте."
+  },
+  {
+   "cut": "transit",
+   "text": "Wer nach Westdeutschland will, fährt über die Transitstrecke. An der Grenze kontrolliert die DDR jedes Auto.",
+   "ru": "Кто хочет в Западную Германию, едет по транзитной трассе. На границе ГДР проверяет каждую машину."
+  },
+  {
+   "cut": "fall",
+   "text": "Achtundzwanzig Jahre lang bleibt die Insel eingemauert. Bis zum neunten November neunzehnhundertneunundachtzig. Dann öffnet sich die Grenze, und die Insel ist keine Insel mehr.",
+   "ru": "Двадцать восемь лет остров остаётся замурованным. До девятого ноября 1989 года. Потом граница открывается, и остров перестаёт быть островом.",
+   "caption": "28 Jahre lang bleibt die Insel eingemauert. Bis zum 9. November 1989. Dann öffnet sich die Grenze, und die Insel ist keine Insel mehr."
+  },
+  {
+   "cut": "end",
+   "text": "Ein Stück Westen mitten in der DDR. Hättest du dort leben wollen?",
+   "ru": "Кусочек Запада посреди ГДР. Ты бы хотел там жить?"
+  }
+ ]
+}

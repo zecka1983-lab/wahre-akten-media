@@ -99,7 +99,7 @@ timeline, t, parts = [], 0.0, []
 for i, sc in enumerate(script["scenes"]):
     text = sc["ru"] if lang == "ru" else sc["text"]
     caption = sc.get("ru_caption", sc["ru"]) if lang == "ru" else sc.get("caption", sc["text"])
-    big = sc["big"]
+    big = sc.get("big", "")
     if lang == "ru":
         for k, v in BIG_RU.items():
             big = big.replace(k, v)

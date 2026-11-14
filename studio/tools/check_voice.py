@@ -16,7 +16,8 @@ from num2words import num2words
 def norm(s):
     # цифры -> слова («18» = «achtzehn»), иначе это ложная ошибка
     s = s.replace("ё", "е")
-    s = re.sub(r"\d+", lambda m: " " + num2words(int(m.group()), lang=lang) + " ", s.lower())
+    s = re.sub(r"(?<=\d)\.(?=\d{3})", "", s)  # 280.000 -> 280000
+    s = re.sub(r"\d+", lambda m: " " + (num2words(int(m.group()), lang=lang, to="year") if 1100 <= int(m.group()) < 2000 else num2words(int(m.group()), lang=lang)) + " ", s.lower())
     return re.sub(r"[^\wäöüß]+", " ", s).split()
 
 model = WhisperModel("medium", device="cpu", compute_type="int8")

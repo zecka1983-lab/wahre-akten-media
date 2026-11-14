@@ -1,0 +1,24 @@
+{
+ "title": "Du bist 9 – Über die Mauer",
+ "theme": "story",
+ "hook_text": "DU HÄNGST ÜBER DER MAUER",
+ "music": {"mood": "mystery", "resolve": "west", "tick": ["toilet"], "pulse": ["whook", "slide", "dad"], "riser": ["throw", "harness"], "hit": true, "swoosh": false},
+ "scenes": [
+  {"cut": "whook", "emo": "fear", "big": "NACHT", "text": "Du hängst an einem Stahlseil. Unter dir ist die Berliner Mauer.", "ru": "Ты висишь на стальном тросе. Под тобой Берлинская стена."},
+  {"cut": "ministry", "emo": "nervous", "big": "VORHER", "text": "Ein paar Stunden vorher.", "ru": "За несколько часов до этого."},
+  {"cut": "ministry", "emo": "nervous", "big": "1965", "text": "Ost-Berlin, neunzehnhundertfünfundsechzig. Du bist neun. Mit deinen Eltern gehst du in ein riesiges Regierungsgebäude: das Haus der Ministerien. Direkt dahinter steht die Mauer. Nur zwölf Meter entfernt.", "ru": "Восточный Берлин, 1965 год. Тебе девять. С родителями ты входишь в огромное правительственное здание, Дом министерств. Прямо за ним стоит Стена. Всего в двенадцати метрах.", "caption": "Ost-Berlin, 1965. Du bist 9. Mit deinen Eltern gehst du in ein riesiges Regierungsgebäude: das Haus der Ministerien. Direkt dahinter steht die Mauer. Nur 12 Meter entfernt."},
+  {"cut": "toilet", "emo": "fear", "big": "GESCHLOSSEN", "text": "Nach Feierabend versteckt ihr euch in einer Toilette. Dein Vater verriegelt die Tür von innen. Draußen hängt ein Schild: geschlossen.", "ru": "После конца рабочего дня вы прячетесь в туалете. Отец запирает дверь изнутри. Снаружи висит табличка: «Закрыто»."},
+  {"cut": "toilet", "emo": "nervous", "big": "PSST", "text": "Stundenlang sitzt ihr ganz still. Auf dem Flur hörst du Schritte. Sie gehen vorbei.", "ru": "Часами вы сидите совсем тихо. В коридоре слышны шаги. Они проходят мимо."},
+  {"cut": "roof", "emo": "nervous", "big": "DACH", "text": "In der Nacht schleicht ihr aufs Dach. Dein Vater gibt mit einer Taschenlampe ein Zeichen. Nach drüben, in den Westen.", "ru": "Ночью вы пробираетесь на крышу. Отец подаёт знак фонариком. Туда, на Запад."},
+  {"cut": "throw", "emo": "shock", "big": "HAMMER", "text": "Dann bindet er einen Hammer an eine Nylonschnur. Und wirft ihn über die Mauer.", "ru": "Потом он привязывает молоток к нейлоновому шнуру. И бросает его через Стену."},
+  {"cut": "cable", "emo": "nervous", "big": "STAHLSEIL", "text": "Drüben warten Verwandte. Sie binden ein Stahlseil an die Schnur. Deine Eltern ziehen es mit aller Kraft hoch und machen es an einem Fahnenmast fest.", "ru": "На той стороне ждут родственники. Они привязывают к шнуру стальной трос. Родители изо всех сил тянут его наверх и закрепляют на флагштоке."},
+  {"cut": "harness", "emo": "fear", "big": "DU ZUERST", "text": "Dann sieht dein Vater dich an. Du fährst als Erster.", "ru": "Потом отец смотрит на тебя. Ты поедешь первым."},
+  {"cut": "slide", "emo": "fear", "big": "LOS", "text": "Du hängst in einem selbstgebauten Gurt. Du rollst los, über den Grenzstreifen, mitten in die Dunkelheit.", "ru": "Ты висишь в самодельной обвязке. Ты катишься вниз, над пограничной полосой, прямо в темноту."},
+  {"cut": "west", "emo": "laugh", "big": "WEST", "text": "Unten greifen Hände nach dir. Es sind deine Verwandten. Du bist im Westen.", "ru": "Внизу тебя подхватывают руки. Это твои родственники. Ты на Западе."},
+  {"cut": "mum", "emo": "nervous", "big": "MAMA", "text": "Jetzt kommt deine Mutter. Das Seil zittert. Sie kommt an.", "ru": "Теперь едет мама. Трос дрожит. Она доехала."},
+  {"cut": "dad", "emo": "fear", "big": "PAPA", "text": "Nur dein Vater ist noch oben. Ganz allein, auf dem Dach des Ministeriums.", "ru": "Наверху остался только отец. Совсем один, на крыше министерства."},
+  {"cut": "dadslide", "emo": "laugh", "big": "PAPA!", "text": "Dann rollt auch er über die Mauer. Direkt zu dir.", "ru": "А потом и он катится над Стеной. Прямо к тебе."},
+  {"cut": "family", "emo": "laugh", "big": "FREI", "text": "Ihr fangt in München ein neues Leben an. Und alles begann mit einem Hammer und einer Schnur.", "ru": "Вы начинаете новую жизнь в Мюнхене. А всё началось с молотка и шнура."},
+  {"cut": "endrope", "emo": "laugh", "big": "9", "text": "Du warst neun und hast über der Mauer gehangen. Wärst du als Erster gefahren?", "ru": "Тебе было девять, и ты висел над Стеной. А ты бы поехал первым?", "caption": "Du warst 9 und hast über der Mauer gehangen. Wärst du als Erster gefahren?"}
+ ]
+}

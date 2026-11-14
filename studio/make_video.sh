@@ -41,7 +41,7 @@ elif [ "$MODE" = final ]; then
       "../$FINAL/${NAME}_m.mp4" && mv "../$FINAL/${NAME}_m.mp4" "../$FINAL/${NAME}.mp4"
   fi
   # сжатие под TikTok (~20 МБ на минуту+): владелец экономит трафик, TikTok всё равно пережимает
-  ffmpeg -v error -y -i "../$FINAL/${NAME}.mp4" -c:v libx264 -preset slow -crf 23 -maxrate 2500k -bufsize 5000k \
+  ffmpeg -v error -y -i "../$FINAL/${NAME}.mp4" -c:v libx264 -preset slow -crf ${CRF:-23} -maxrate ${MAXRATE:-2500k} -bufsize 10000k \
     -pix_fmt yuv420p -c:a aac -b:a 160k -movflags +faststart "../$FINAL/${NAME}_tmp.mp4" && mv "../$FINAL/${NAME}_tmp.mp4" "../$FINAL/${NAME}.mp4"
   echo "Готово: $FINAL/${NAME}.mp4"
 else

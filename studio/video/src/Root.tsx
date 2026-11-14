@@ -6,6 +6,7 @@ import {Engine4Still} from './Engine4';
 import {CarEngine} from './CarEngine';
 import {Avatar, CoverBallon, FbCover, YtBanner} from './Brand';
 import timeline from './timeline.json';
+import {MapTest} from './MapStory';
 
 export const Root: React.FC = () => (
   <>
@@ -16,6 +17,7 @@ export const Root: React.FC = () => (
   <Composition id="FbCover" component={FbCover} width={1640} height={624} fps={30} durationInFrames={1} />
   <Composition id="Avatar" component={Avatar} width={1080} height={1080} fps={30} durationInFrames={1} />
   <Composition id="CoverBallon" component={CoverBallon} width={1080} height={1920} fps={30} durationInFrames={1} />
+  <Composition id="MapTest" component={MapTest} width={1080} height={1920} fps={30} durationInFrames={60} defaultProps={{shot: 'germany' as const}} />
   <Composition
     id="Main"
     component={Main}
