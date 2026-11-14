@@ -1,0 +1,112 @@
+{
+ "title": "Du bist 15 – Flucht im Ballon",
+ "theme": "story",
+ "hook_text": "DU BIST 15. HEUTE NACHT FLIEHST DU AUS DER DDR",
+ "music": {
+  "mood": "mystery",
+  "resolve": "answer",
+  "tick": [
+   "wake",
+   "bed"
+  ],
+  "hit": true,
+  "swoosh": true
+ },
+ "scenes": [
+  {
+   "cut": "wake",
+   "emo": "fear",
+   "big": "02:00",
+   "text": "Du bist fünfzehn. Deine Mutter weckt dich mitten in der Nacht: Zieh dich an. Leise. Wir fliegen heute.",
+   "ru": "Тебе пятнадцать. Мать будит тебя посреди ночи: «Одевайся. Тихо. Сегодня мы летим»."
+  },
+  {
+   "cut": "kitchen",
+   "emo": "nervous",
+   "big": "DDR · 1979",
+   "text": "DDR, neunzehnhundertneunundsiebzig. Dein Vater hat einen Plan, von dem niemand wissen darf. Ihr fliegt über die Grenze. Mit einem Ballon.",
+   "ru": "ГДР, 1979 год. У твоего отца план, о котором никто не должен знать. Вы перелетите границу. На воздушном шаре.",
+   "caption": "DDR, 1979. Dein Vater hat einen Plan, von dem niemand wissen darf. Ihr fliegt über die Grenze. Mit einem Ballon."
+  },
+  {
+   "cut": "sewing",
+   "emo": "ok",
+   "big": "DER PLAN",
+   "text": "Monatelang hast du gehört, wie er nachts an der alten Nähmaschine sitzt. Stück für Stück. Aus jedem Stoff, den er bekommen kann.",
+   "ru": "Месяцами ты слышал, как он ночами сидит за старой швейной машинкой. Кусок за куском. Из любой ткани, какую удаётся достать."
+  },
+  {
+   "cut": "memory",
+   "emo": "sad",
+   "big": "JULI",
+   "text": "Im Juli seid ihr schon einmal geflogen. Der Ballon stürzte ab. Nur wenige hundert Meter vor der Grenze.",
+   "ru": "В июле вы уже один раз взлетали. Шар упал. Всего в нескольких сотнях метров от границы."
+  },
+  {
+   "cut": "bed",
+   "emo": "fear",
+   "big": "STASI",
+   "text": "Ihr seid unbemerkt nach Hause gekommen. Doch die Stasi hat die Reste gefunden. Seitdem zuckst du bei jedem Klingeln zusammen.",
+   "ru": "Вы незаметно вернулись домой. Но Штази нашла остатки шара. С тех пор ты вздрагиваешь от каждого звонка в дверь."
+  },
+  {
+   "cut": "meadow",
+   "emo": "nervous",
+   "big": "16.09.1979",
+   "text": "Jetzt stehst du auf einer Waldwiese. Acht Menschen, zwei Familien. Kein Korb – nur eine kleine Plattform und ein paar Seile.",
+   "ru": "Теперь ты стоишь на лесной поляне. Восемь человек, две семьи. Никакой корзины — только маленькая платформа и несколько верёвок.",
+   "caption": "Jetzt stehst du auf einer Waldwiese. 8 Menschen, 2 Familien. Kein Korb – nur eine kleine Plattform und ein paar Seile."
+  },
+  {
+   "cut": "liftoff",
+   "emo": "shock",
+   "big": "START",
+   "text": "Der Brenner faucht. Viel zu laut. Der Ballon richtet sich auf – und deine Füße verlieren den Boden.",
+   "ru": "Ревёт горелка. Слишком громко. Шар поднимается — и твои ноги отрываются от земли."
+  },
+  {
+   "cut": "flight",
+   "emo": "fear",
+   "big": "2000 m",
+   "text": "Zweitausend Meter. Der Wind ist eiskalt. Unter dir die Lichter der Grenze. Wenn sie euch jetzt entdecken…",
+   "ru": "Две тысячи метров. Ледяной ветер. Под тобой огни границы. Если вас сейчас заметят…",
+   "caption": "2.000 Meter. Der Wind ist eiskalt. Unter dir die Lichter der Grenze. Wenn sie euch jetzt entdecken…"
+  },
+  {
+   "cut": "gas",
+   "emo": "shock",
+   "big": "GAS",
+   "text": "Dann wird die Flamme kleiner. Das Gas geht aus. Ihr sinkt.",
+   "ru": "И тут пламя становится меньше. Газ кончается. Вы снижаетесь."
+  },
+  {
+   "cut": "landing",
+   "emo": "fear",
+   "big": "WO?",
+   "text": "Nach achtundzwanzig Minuten setzt ihr in einem Feld auf. Es ist stockdunkel. Seid ihr im Westen? Oder wieder in der DDR?",
+   "ru": "Через 28 минут вы садитесь в поле. Кромешная тьма. Вы на Западе? Или снова в ГДР?",
+   "caption": "Nach 28 Minuten setzt ihr in einem Feld auf. Es ist stockdunkel. Seid ihr im Westen? Oder wieder in der DDR?"
+  },
+  {
+   "cut": "police",
+   "emo": "nervous",
+   "big": "?",
+   "text": "Scheinwerfer. Ein Polizeiauto. Dein Vater geht hin und fragt mit zitternder Stimme: Sind wir im Westen?",
+   "ru": "Фары. Полицейская машина. Отец подходит и дрожащим голосом спрашивает: мы на Западе?"
+  },
+  {
+   "cut": "answer",
+   "emo": "laugh",
+   "big": "BAYERN",
+   "text": "Die Antwort: Ja. Ihr seid in Bayern.",
+   "ru": "Ответ: да. Вы в Баварии."
+  },
+  {
+   "cut": "end",
+   "emo": "laugh",
+   "big": "FREI",
+   "text": "Du bist fünfzehn. Und du bist frei.",
+   "ru": "Тебе пятнадцать. И ты свободен."
+  }
+ ]
+}

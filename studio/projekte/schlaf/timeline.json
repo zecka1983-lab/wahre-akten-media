@@ -1,0 +1,916 @@
+{
+ "title": "Was passiert, wenn du nicht schläfst?",
+ "fps": 30,
+ "duration": 67.478,
+ "scenes": [
+  {
+   "big": "0 h",
+   "tired": 0.0,
+   "text": "Was passiert mit deinem Körper, wenn du einfach nicht mehr schläfst? Stunde für Stunde.",
+   "start": 0.0,
+   "dur": 4.266,
+   "words": [
+    {
+     "w": "Was",
+     "t": 0.0
+    },
+    {
+     "w": "passiert",
+     "t": 0.197
+    },
+    {
+     "w": "mit",
+     "t": 0.591
+    },
+    {
+     "w": "deinem",
+     "t": 0.787
+    },
+    {
+     "w": "Körper,",
+     "t": 1.102
+    },
+    {
+     "w": "wenn",
+     "t": 1.457
+    },
+    {
+     "w": "du",
+     "t": 1.693
+    },
+    {
+     "w": "einfach",
+     "t": 1.851
+    },
+    {
+     "w": "nicht",
+     "t": 2.205
+    },
+    {
+     "w": "mehr",
+     "t": 2.48
+    },
+    {
+     "w": "schläfst?",
+     "t": 2.717
+    },
+    {
+     "w": "Stunde",
+     "t": 3.15
+    },
+    {
+     "w": "für",
+     "t": 3.465
+    },
+    {
+     "w": "Stunde.",
+     "t": 3.662
+    }
+   ]
+  },
+  {
+   "big": "?",
+   "tired": 0.0,
+   "text": "Bleib bis zum Ende. Tag drei ist wirklich unheimlich.",
+   "start": 4.266,
+   "dur": 3.274,
+   "words": [
+    {
+     "w": "Bleib",
+     "t": 4.266
+    },
+    {
+     "w": "bis",
+     "t": 4.602
+    },
+    {
+     "w": "zum",
+     "t": 4.842
+    },
+    {
+     "w": "Ende.",
+     "t": 5.082
+    },
+    {
+     "w": "Tag",
+     "t": 5.418
+    },
+    {
+     "w": "drei",
+     "t": 5.658
+    },
+    {
+     "w": "ist",
+     "t": 5.946
+    },
+    {
+     "w": "wirklich",
+     "t": 6.186
+    },
+    {
+     "w": "unheimlich.",
+     "t": 6.666
+    }
+   ]
+  },
+  {
+   "big": "16 h",
+   "tired": 0.2,
+   "text": "Nach sechzehn Stunden wach sammelt dein Gehirn einen Stoff namens Adenosin. Genau der macht dich müde.",
+   "caption": "Nach 16 Stunden wach sammelt dein Gehirn einen Stoff namens Adenosin. Genau der macht dich müde.",
+   "start": 7.54,
+   "dur": 5.418,
+   "words": [
+    {
+     "w": "Nach",
+     "t": 7.54
+    },
+    {
+     "w": "16",
+     "t": 7.814
+    },
+    {
+     "w": "Stunden",
+     "t": 7.997
+    },
+    {
+     "w": "wach",
+     "t": 8.409
+    },
+    {
+     "w": "sammelt",
+     "t": 8.683
+    },
+    {
+     "w": "dein",
+     "t": 9.095
+    },
+    {
+     "w": "Gehirn",
+     "t": 9.369
+    },
+    {
+     "w": "einen",
+     "t": 9.735
+    },
+    {
+     "w": "Stoff",
+     "t": 10.055
+    },
+    {
+     "w": "namens",
+     "t": 10.376
+    },
+    {
+     "w": "Adenosin.",
+     "t": 10.741
+    },
+    {
+     "w": "Genau",
+     "t": 11.244
+    },
+    {
+     "w": "der",
+     "t": 11.565
+    },
+    {
+     "w": "macht",
+     "t": 11.793
+    },
+    {
+     "w": "dich",
+     "t": 12.113
+    },
+    {
+     "w": "müde.",
+     "t": 12.388
+    }
+   ]
+  },
+  {
+   "big": "24 h",
+   "tired": 0.35,
+   "text": "Nach vierundzwanzig Stunden ist deine Reaktionszeit so schlecht, als hättest du etwa ein Promille Alkohol im Blut.",
+   "caption": "Nach 24 Stunden ist deine Reaktionszeit so schlecht, als hättest du etwa 1 Promille Alkohol im Blut.",
+   "start": 12.958,
+   "dur": 6.106,
+   "words": [
+    {
+     "w": "Nach",
+     "t": 12.958
+    },
+    {
+     "w": "24",
+     "t": 13.256
+    },
+    {
+     "w": "Stunden",
+     "t": 13.454
+    },
+    {
+     "w": "ist",
+     "t": 13.901
+    },
+    {
+     "w": "deine",
+     "t": 14.149
+    },
+    {
+     "w": "Reaktionszeit",
+     "t": 14.496
+    },
+    {
+     "w": "so",
+     "t": 15.241
+    },
+    {
+     "w": "schlecht,",
+     "t": 15.439
+    },
+    {
+     "w": "als",
+     "t": 15.985
+    },
+    {
+     "w": "hättest",
+     "t": 16.233
+    },
+    {
+     "w": "du",
+     "t": 16.68
+    },
+    {
+     "w": "etwa",
+     "t": 16.879
+    },
+    {
+     "w": "1",
+     "t": 17.176
+    },
+    {
+     "w": "Promille",
+     "t": 17.325
+    },
+    {
+     "w": "Alkohol",
+     "t": 17.821
+    },
+    {
+     "w": "im",
+     "t": 18.268
+    },
+    {
+     "w": "Blut.",
+     "t": 18.467
+    }
+   ]
+  },
+  {
+   "big": "24 h",
+   "tired": 0.4,
+   "text": "Du wirst gereizt, vergesslich, und dein Körper schüttet mehr Stresshormone aus.",
+   "start": 19.064,
+   "dur": 4.026,
+   "words": [
+    {
+     "w": "Du",
+     "t": 19.064
+    },
+    {
+     "w": "wirst",
+     "t": 19.23
+    },
+    {
+     "w": "gereizt,",
+     "t": 19.52
+    },
+    {
+     "w": "vergesslich,",
+     "t": 19.935
+    },
+    {
+     "w": "und",
+     "t": 20.516
+    },
+    {
+     "w": "dein",
+     "t": 20.724
+    },
+    {
+     "w": "Körper",
+     "t": 20.973
+    },
+    {
+     "w": "schüttet",
+     "t": 21.305
+    },
+    {
+     "w": "mehr",
+     "t": 21.72
+    },
+    {
+     "w": "Stresshormone",
+     "t": 21.969
+    },
+    {
+     "w": "aus.",
+     "t": 22.591
+    }
+   ]
+  },
+  {
+   "big": "36 h",
+   "tired": 0.55,
+   "text": "Nach sechsunddreißig Stunden schaltet dein Gehirn heimlich ab. Sekundenschlaf. Für ein paar Sekunden bist du einfach weg, ohne es zu merken.",
+   "caption": "Nach 36 Stunden schaltet dein Gehirn heimlich ab. Sekundenschlaf. Für ein paar Sekunden bist du einfach weg, ohne es zu merken.",
+   "start": 23.09,
+   "dur": 7.338,
+   "words": [
+    {
+     "w": "Nach",
+     "t": 23.09
+    },
+    {
+     "w": "36",
+     "t": 23.375
+    },
+    {
+     "w": "Stunden",
+     "t": 23.566
+    },
+    {
+     "w": "schaltet",
+     "t": 23.994
+    },
+    {
+     "w": "dein",
+     "t": 24.47
+    },
+    {
+     "w": "Gehirn",
+     "t": 24.755
+    },
+    {
+     "w": "heimlich",
+     "t": 25.136
+    },
+    {
+     "w": "ab.",
+     "t": 25.611
+    },
+    {
+     "w": "Sekundenschlaf.",
+     "t": 25.849
+    },
+    {
+     "w": "Für",
+     "t": 26.658
+    },
+    {
+     "w": "ein",
+     "t": 26.896
+    },
+    {
+     "w": "paar",
+     "t": 27.133
+    },
+    {
+     "w": "Sekunden",
+     "t": 27.419
+    },
+    {
+     "w": "bist",
+     "t": 27.895
+    },
+    {
+     "w": "du",
+     "t": 28.18
+    },
+    {
+     "w": "einfach",
+     "t": 28.37
+    },
+    {
+     "w": "weg,",
+     "t": 28.798
+    },
+    {
+     "w": "ohne",
+     "t": 29.084
+    },
+    {
+     "w": "es",
+     "t": 29.369
+    },
+    {
+     "w": "zu",
+     "t": 29.56
+    },
+    {
+     "w": "merken.",
+     "t": 29.75
+    }
+   ]
+  },
+  {
+   "big": "!",
+   "tired": 0.6,
+   "text": "Am Steuer kann genau das tödlich enden.",
+   "start": 30.428,
+   "dur": 2.218,
+   "words": [
+    {
+     "w": "Am",
+     "t": 30.428
+    },
+    {
+     "w": "Steuer",
+     "t": 30.595
+    },
+    {
+     "w": "kann",
+     "t": 30.93
+    },
+    {
+     "w": "genau",
+     "t": 31.182
+    },
+    {
+     "w": "das",
+     "t": 31.475
+    },
+    {
+     "w": "tödlich",
+     "t": 31.684
+    },
+    {
+     "w": "enden.",
+     "t": 32.061
+    }
+   ]
+  },
+  {
+   "big": "48 h",
+   "tired": 0.7,
+   "text": "Nach achtundvierzig Stunden wird dein Immunsystem schwächer. Du wirst anfälliger für Infekte.",
+   "caption": "Nach 48 Stunden wird dein Immunsystem schwächer. Du wirst anfälliger für Infekte.",
+   "start": 32.646,
+   "dur": 5.226,
+   "words": [
+    {
+     "w": "Nach",
+     "t": 32.646
+    },
+    {
+     "w": "48",
+     "t": 32.964
+    },
+    {
+     "w": "Stunden",
+     "t": 33.175
+    },
+    {
+     "w": "wird",
+     "t": 33.652
+    },
+    {
+     "w": "dein",
+     "t": 33.969
+    },
+    {
+     "w": "Immunsystem",
+     "t": 34.287
+    },
+    {
+     "w": "schwächer.",
+     "t": 34.975
+    },
+    {
+     "w": "Du",
+     "t": 35.61
+    },
+    {
+     "w": "wirst",
+     "t": 35.822
+    },
+    {
+     "w": "anfälliger",
+     "t": 36.193
+    },
+    {
+     "w": "für",
+     "t": 36.828
+    },
+    {
+     "w": "Infekte.",
+     "t": 37.093
+    }
+   ]
+  },
+  {
+   "big": "72 h",
+   "tired": 0.85,
+   "text": "Und nach zweiundsiebzig Stunden sehen viele Menschen Dinge, die gar nicht da sind. Halluzinationen.",
+   "caption": "Und nach 72 Stunden sehen viele Menschen Dinge, die gar nicht da sind. Halluzinationen.",
+   "start": 37.872,
+   "dur": 5.21,
+   "words": [
+    {
+     "w": "Und",
+     "t": 37.872
+    },
+    {
+     "w": "nach",
+     "t": 38.115
+    },
+    {
+     "w": "72",
+     "t": 38.407
+    },
+    {
+     "w": "Stunden",
+     "t": 38.601
+    },
+    {
+     "w": "sehen",
+     "t": 39.039
+    },
+    {
+     "w": "viele",
+     "t": 39.379
+    },
+    {
+     "w": "Menschen",
+     "t": 39.72
+    },
+    {
+     "w": "Dinge,",
+     "t": 40.206
+    },
+    {
+     "w": "die",
+     "t": 40.595
+    },
+    {
+     "w": "gar",
+     "t": 40.838
+    },
+    {
+     "w": "nicht",
+     "t": 41.081
+    },
+    {
+     "w": "da",
+     "t": 41.422
+    },
+    {
+     "w": "sind.",
+     "t": 41.616
+    },
+    {
+     "w": "Halluzinationen.",
+     "t": 41.957
+    }
+   ]
+  },
+  {
+   "big": "72 h",
+   "tired": 0.9,
+   "text": "Wände scheinen sich zu bewegen. Schatten sehen plötzlich aus wie Menschen.",
+   "start": 43.082,
+   "dur": 3.514,
+   "words": [
+    {
+     "w": "Wände",
+     "t": 43.082
+    },
+    {
+     "w": "scheinen",
+     "t": 43.348
+    },
+    {
+     "w": "sich",
+     "t": 43.727
+    },
+    {
+     "w": "zu",
+     "t": 43.955
+    },
+    {
+     "w": "bewegen.",
+     "t": 44.107
+    },
+    {
+     "w": "Schatten",
+     "t": 44.486
+    },
+    {
+     "w": "sehen",
+     "t": 44.866
+    },
+    {
+     "w": "plötzlich",
+     "t": 45.131
+    },
+    {
+     "w": "aus",
+     "t": 45.549
+    },
+    {
+     "w": "wie",
+     "t": 45.739
+    },
+    {
+     "w": "Menschen.",
+     "t": 45.929
+    }
+   ]
+  },
+  {
+   "big": "264 h",
+   "tired": 1.0,
+   "text": "Der berühmteste Rekord? Neunzehnhundertvierundsechzig blieb der Schüler Randy Gardner elf Tage wach. Zweihundertvierundsechzig Stunden.",
+   "caption": "Der berühmteste Rekord? 1964 blieb der Schüler Randy Gardner 11 Tage wach. 264 Stunden.",
+   "start": 46.596,
+   "dur": 7.354,
+   "words": [
+    {
+     "w": "Der",
+     "t": 46.596
+    },
+    {
+     "w": "berühmteste",
+     "t": 46.944
+    },
+    {
+     "w": "Rekord?",
+     "t": 47.85
+    },
+    {
+     "w": "1964",
+     "t": 48.476
+    },
+    {
+     "w": "blieb",
+     "t": 48.894
+    },
+    {
+     "w": "der",
+     "t": 49.382
+    },
+    {
+     "w": "Schüler",
+     "t": 49.73
+    },
+    {
+     "w": "Randy",
+     "t": 50.357
+    },
+    {
+     "w": "Gardner",
+     "t": 50.844
+    },
+    {
+     "w": "11",
+     "t": 51.471
+    },
+    {
+     "w": "Tage",
+     "t": 51.75
+    },
+    {
+     "w": "wach.",
+     "t": 52.168
+    },
+    {
+     "w": "264",
+     "t": 52.655
+    },
+    {
+     "w": "Stunden.",
+     "t": 53.004
+    }
+   ]
+  },
+  {
+   "big": "264 h",
+   "tired": 0.3,
+   "text": "Danach schlief er sich einfach aus und erholte sich wieder.",
+   "start": 53.95,
+   "dur": 2.858,
+   "words": [
+    {
+     "w": "Danach",
+     "t": 53.95
+    },
+    {
+     "w": "schlief",
+     "t": 54.248
+    },
+    {
+     "w": "er",
+     "t": 54.583
+    },
+    {
+     "w": "sich",
+     "t": 54.732
+    },
+    {
+     "w": "einfach",
+     "t": 54.956
+    },
+    {
+     "w": "aus",
+     "t": 55.291
+    },
+    {
+     "w": "und",
+     "t": 55.478
+    },
+    {
+     "w": "erholte",
+     "t": 55.664
+    },
+    {
+     "w": "sich",
+     "t": 55.999
+    },
+    {
+     "w": "wieder.",
+     "t": 56.223
+    }
+   ]
+  },
+  {
+   "big": "STOP",
+   "tired": 0.3,
+   "text": "Aber Ärzte warnen: Mach das auf keinen Fall nach.",
+   "start": 56.808,
+   "dur": 2.89,
+   "words": [
+    {
+     "w": "Aber",
+     "t": 56.808
+    },
+    {
+     "w": "Ärzte",
+     "t": 57.076
+    },
+    {
+     "w": "warnen:",
+     "t": 57.39
+    },
+    {
+     "w": "Mach",
+     "t": 57.792
+    },
+    {
+     "w": "das",
+     "t": 58.061
+    },
+    {
+     "w": "auf",
+     "t": 58.285
+    },
+    {
+     "w": "keinen",
+     "t": 58.508
+    },
+    {
+     "w": "Fall",
+     "t": 58.866
+    },
+    {
+     "w": "nach.",
+     "t": 59.135
+    }
+   ]
+  },
+  {
+   "big": "DU?",
+   "tired": 0.0,
+   "text": "Und jetzt du: Wie viele Stunden hast du letzte Nacht geschlafen? Schreib es in die Kommentare.",
+   "start": 59.698,
+   "dur": 4.682,
+   "words": [
+    {
+     "w": "Und",
+     "t": 59.698
+    },
+    {
+     "w": "jetzt",
+     "t": 59.898
+    },
+    {
+     "w": "du:",
+     "t": 60.177
+    },
+    {
+     "w": "Wie",
+     "t": 60.377
+    },
+    {
+     "w": "viele",
+     "t": 60.576
+    },
+    {
+     "w": "Stunden",
+     "t": 60.856
+    },
+    {
+     "w": "hast",
+     "t": 61.215
+    },
+    {
+     "w": "du",
+     "t": 61.455
+    },
+    {
+     "w": "letzte",
+     "t": 61.615
+    },
+    {
+     "w": "Nacht",
+     "t": 61.934
+    },
+    {
+     "w": "geschlafen?",
+     "t": 62.213
+    },
+    {
+     "w": "Schreib",
+     "t": 62.733
+    },
+    {
+     "w": "es",
+     "t": 63.092
+    },
+    {
+     "w": "in",
+     "t": 63.252
+    },
+    {
+     "w": "die",
+     "t": 63.411
+    },
+    {
+     "w": "Kommentare.",
+     "t": 63.611
+    }
+   ]
+  },
+  {
+   "big": "FOLGEN",
+   "tired": 0.0,
+   "text": "Und folge mir für mehr Dinge, die dein Körper heimlich tut.",
+   "start": 64.38,
+   "dur": 3.098,
+   "words": [
+    {
+     "w": "Und",
+     "t": 64.38
+    },
+    {
+     "w": "folge",
+     "t": 64.581
+    },
+    {
+     "w": "mir",
+     "t": 64.861
+    },
+    {
+     "w": "für",
+     "t": 65.062
+    },
+    {
+     "w": "mehr",
+     "t": 65.262
+    },
+    {
+     "w": "Dinge,",
+     "t": 65.503
+    },
+    {
+     "w": "die",
+     "t": 65.824
+    },
+    {
+     "w": "dein",
+     "t": 66.025
+    },
+    {
+     "w": "Körper",
+     "t": 66.265
+    },
+    {
+     "w": "heimlich",
+     "t": 66.586
+    },
+    {
+     "w": "tut.",
+     "t": 66.987
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "title": "Was passiert, wenn du in den Marianengraben sinkst?",
+ "scenes": [
+  {
+   "big": "0 m",
+   "tired": 0,
+   "text": "Stell dir vor, du sinkst ins tiefste Loch der Erde. Den Marianengraben. Elf Kilometer tief.",
+   "ru": "Представь: ты погружаешься в самую глубокую впадину Земли, Марианскую. 11 км вниз."
+  },
+  {
+   "big": "?",
+   "tired": 0.02,
+   "text": "Bleib bis zum Ende. Ganz unten wartet etwas, womit niemand gerechnet hat.",
+   "ru": "Досмотри: на самом дне ждёт то, чего никто не ожидал."
+  },
+  {
+   "big": "10 m",
+   "tired": 0.05,
+   "text": "Bei zehn Metern drückt das Wasser schon doppelt so stark wie die Luft an Land. Deine Ohren tun weh.",
+   "ru": "На 10 метрах давление уже вдвое больше, чем на суше. Болят уши."
+  },
+  {
+   "big": "200 m",
+   "tired": 0.2,
+   "text": "Bei zweihundert Metern wird es dämmrig. Rotes Licht ist längst verschwunden, alles sieht blau aus.",
+   "ru": "На 200 метрах полумрак. Красного цвета давно нет, всё синее."
+  },
+  {
+   "big": "332 m",
+   "tired": 0.3,
+   "text": "Hier, bei rund dreihundertzweiunddreißig Metern, liegt der Weltrekord im Tauchen mit Flasche. Tiefer kam noch kein Taucher.",
+   "ru": "Около 332 метров — мировой рекорд погружения с аквалангом. Глубже ни один дайвер не опускался."
+  },
+  {
+   "big": "1000 m",
+   "tired": 0.5,
+   "text": "Ab tausend Metern: totale Dunkelheit. Das einzige Licht kommt von Tieren, die selbst leuchten.",
+   "ru": "С 1000 метров полная темнота. Светятся только сами животные."
+  },
+  {
+   "big": "1000 m+",
+   "tired": 0.55,
+   "text": "Wie der Anglerfisch. Er lockt seine Beute mit einer leuchtenden Angel direkt vor seinem Maul.",
+   "ru": "Например, рыба-удильщик: приманивает добычу светящейся «удочкой» прямо перед пастью."
+  },
+  {
+   "big": "4000 m",
+   "tired": 0.7,
+   "text": "Bei viertausend Metern ist das Wasser nur noch etwa zwei Grad kalt.",
+   "ru": "На 4000 метрах вода всего около +2 °C."
+  },
+  {
+   "big": "11 km",
+   "tired": 1,
+   "text": "Ganz unten drückt das Wasser über tausendmal stärker als an der Oberfläche. Als würde ein Elefant auf deinem Daumen stehen.",
+   "ru": "На дне давление в 1000 раз больше, чем на поверхности. Как будто на твоём пальце стоит слон."
+  },
+  {
+   "big": "1960",
+   "tired": 1,
+   "text": "Trotzdem waren schon Menschen dort. Neunzehnhundertsechzig tauchten Jacques Piccard und Don Walsh mit dem Tauchboot Trieste hinab.",
+   "ru": "И всё же люди там были: в 1960 году Жак Пикар и Дон Уолш спустились на батискафе «Триест»."
+  },
+  {
+   "big": "!",
+   "tired": 1,
+   "text": "Und was fanden Forscher am Grund? Unter anderem eine Plastiktüte. Unser Müll ist schon ganz unten angekommen.",
+   "ru": "А что нашли учёные на дне? В том числе пластиковый пакет. Наш мусор уже на самом дне."
+  },
+  {
+   "big": "DU?",
+   "tired": 0.3,
+   "text": "Würdest du da runterfahren? Ja oder nein? Schreib es in die Kommentare.",
+   "ru": "Ты бы спустился туда? Да или нет — пиши в комментарии."
+  },
+  {
+   "big": "FOLGEN",
+   "tired": 0,
+   "text": "Folge mir für mehr: Was wäre, wenn…",
+   "ru": "Подпишись на продолжение рубрики «Что было бы, если…»."
+  }
+ ],
+ "theme": "graben"
+}

@@ -1,0 +1,93 @@
+{
+ "title": "Die Ballonflucht aus der DDR",
+ "theme": "story",
+ "hook_text": "SIE NÄHTEN EINEN BALLON, UM AUS DER DDR ZU FLIEHEN",
+ "music": {
+  "mood": "mystery",
+  "resolve": "police",
+  "tick": [
+   "countdown"
+  ],
+  "hit": true,
+  "swoosh": true
+ },
+ "scenes": [
+  {
+   "cut": "hook2",
+   "big": "DDR · 1979",
+   "text": "Die Stasi hatte ihren Ballon schon gefunden. Also nähten sie einen neuen.",
+   "ru": "Штази уже нашла их шар. Тогда они сшили новый."
+  },
+  {
+   "cut": "map",
+   "big": "1979",
+   "text": "DDR, neunzehnhundertneunundsiebzig. Zwei Familien aus Pößneck wollen nur eins: in den Westen.",
+   "ru": "ГДР, 1979 год. Две семьи из Пёснека хотят только одного — на Запад.",
+   "caption": "DDR, 1979. Zwei Familien aus Pößneck wollen nur eins: in den Westen."
+  },
+  {
+   "cut": "border",
+   "big": "GRENZE",
+   "text": "Doch dazwischen liegt der Todesstreifen. Zäune, Minen, Wachtürme. Wer erwischt wird, kommt ins Gefängnis.",
+   "ru": "Но между ними — полоса смерти. Заборы, мины, вышки. Кого поймают — тюрьма."
+  },
+  {
+   "cut": "sewing",
+   "big": "DER PLAN",
+   "text": "Ihr Plan klingt verrückt. Sie nähen einen Heißluftballon – nachts, auf einer alten Nähmaschine. Stück für Stück, aus jedem Stoff, den sie bekommen können.",
+   "ru": "Их план звучит безумно. Они шьют воздушный шар — ночами, на старой швейной машинке. Кусок за куском, из любой ткани, какую удаётся достать."
+  },
+  {
+   "cut": "crash",
+   "big": "VERSUCH 1",
+   "text": "Im Juli, mitten in der Nacht, steigt der erste Ballon auf. Und stürzt ab – nur wenige hundert Meter vor der Grenze.",
+   "ru": "В июле, глубокой ночью, взлетает первый шар. И падает — всего в нескольких сотнях метров от границы."
+  },
+  {
+   "cut": "stasi",
+   "big": "STASI",
+   "text": "Sie entkommen unbemerkt. Doch die Stasi findet die Reste und beginnt zu suchen.",
+   "ru": "Им удаётся уйти незамеченными. Но Штази находит остатки шара и начинает поиски."
+  },
+  {
+   "cut": "countdown",
+   "big": "6 WOCHEN",
+   "text": "Jeder Tag kann der letzte sein. In nur sechs Wochen nähen sie einen zweiten Ballon. Größer als der erste.",
+   "ru": "Каждый день может стать последним. Всего за шесть недель они шьют второй шар. Больше первого.",
+   "caption": "Jeder Tag kann der letzte sein. In nur 6 Wochen nähen sie einen zweiten Ballon. Größer als der erste."
+  },
+  {
+   "cut": "launch",
+   "big": "16.09.1979",
+   "text": "Sechzehnter September, mitten in der Nacht. Acht Menschen klammern sich an eine winzige Plattform. Der Brenner faucht.",
+   "ru": "16 сентября, глубокая ночь. Восемь человек цепляются за крошечную платформу. Ревёт горелка.",
+   "caption": "16. September, mitten in der Nacht. 8 Menschen klammern sich an eine winzige Plattform. Der Brenner faucht."
+  },
+  {
+   "cut": "flight",
+   "big": "2000 m",
+   "text": "Zweitausend Meter hoch, eiskalt. Unter ihnen die Lichter der Grenze. Dann wird das Gas knapp.",
+   "ru": "Две тысячи метров, ледяной холод. Внизу огни границы. И тут заканчивается газ.",
+   "caption": "2.000 Meter hoch, eiskalt. Unter ihnen die Lichter der Grenze. Dann wird das Gas knapp."
+  },
+  {
+   "cut": "landing",
+   "big": "WO?",
+   "text": "Nach achtundzwanzig Minuten landen sie auf einem Feld. Es ist stockdunkel. Aber auf welcher Seite?",
+   "ru": "Через 28 минут они садятся в поле. Кромешная тьма. Но по какую сторону границы?",
+   "caption": "Nach 28 Minuten landen sie auf einem Feld. Es ist stockdunkel. Aber auf welcher Seite?"
+  },
+  {
+   "cut": "police",
+   "big": "BAYERN",
+   "text": "Ein Polizeiauto hält an. Die Beamten steigen aus. Sie fragen zitternd: Sind wir im Westen? Die Antwort: Ja. Sie sind in Bayern.",
+   "ru": "Подъезжает полицейская машина. Выходят полицейские. Беглецы дрожащим голосом спрашивают: мы на Западе? Ответ: да. Они в Баварии."
+  },
+  {
+   "cut": "stasi",
+   "big": "STASI",
+   "text": "Und alles nur, weil die Stasi ihren ersten Ballon gefunden hatte.",
+   "ru": "И всё это лишь потому, что Штази нашла их первый шар."
+  }
+ ]
+}

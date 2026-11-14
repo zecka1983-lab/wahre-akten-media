@@ -1,0 +1,134 @@
+{
+ "title": "Du bist 20 – Tunnel 57",
+ "theme": "story",
+ "hook_text": "12 M UNTER DER MAUER",
+ "music": {
+  "mood": "mystery",
+  "resolve": "bakery",
+  "tick": [
+   "streets",
+   "courtyard"
+  ],
+  "hit": true,
+  "swoosh": true
+ },
+ "scenes": [
+  {
+   "cut": "tunnelhook",
+   "emo": "fear",
+   "big": "12 m",
+   "text": "Über dir läuft ein Grenzsoldat. Er darf dich nicht hören.",
+   "ru": "Над тобой идёт пограничник. Он не должен тебя услышать."
+  },
+  {
+   "cut": "berlinwall",
+   "emo": "nervous",
+   "big": "VORHER",
+   "text": "Ein paar Stunden vorher.",
+   "ru": "Несколько часов назад."
+  },
+  {
+   "cut": "berlinwall",
+   "emo": "nervous",
+   "big": "BERLIN · 1964",
+   "text": "Du bist zwanzig. Zwischen dir und deiner Familie steht eine Mauer.",
+   "ru": "Тебе двадцать. Между тобой и твоей семьёй стоит Стена."
+  },
+  {
+   "cut": "berlinwall",
+   "emo": "sad",
+   "big": "1964",
+   "text": "Berlin, neunzehnhundertvierundsechzig. Seit drei Jahren teilt die Mauer die Stadt. Deine Familie lebt im Westen. Du im Osten.",
+   "ru": "Берлин, 1964 год. Уже три года Стена делит город. Твоя семья живёт на Западе. Ты — на Востоке.",
+   "caption": "Berlin, 1964. Seit 3 Jahren teilt die Mauer die Stadt. Deine Familie lebt im Westen. Du im Osten."
+  },
+  {
+   "cut": "courier",
+   "emo": "shock",
+   "big": "TOKIO",
+   "text": "Eines Abends flüstert dir ein Fremder eine Adresse zu. Strelitzer Straße fünfundfünfzig. Und ein einziges Wort: Tokio.",
+   "ru": "Однажды вечером незнакомец шепчет тебе адрес. Штрелитцер-штрассе, 55. И одно-единственное слово: «Токио».",
+   "caption": "Eines Abends flüstert dir ein Fremder eine Adresse zu. Strelitzer Straße 55. Und ein einziges Wort: Tokio."
+  },
+  {
+   "cut": "streets",
+   "emo": "fear",
+   "big": "NACHT",
+   "text": "In der Nacht gehst du durch die dunklen Straßen. Jedes Auto könnte die Stasi sein.",
+   "ru": "Ночью ты идёшь по тёмным улицам. Любая машина может оказаться Штази."
+  },
+  {
+   "cut": "courtyard",
+   "emo": "nervous",
+   "big": "STR. 55",
+   "text": "Ein Hinterhof. Ein altes Klohäuschen. Du klopfst. Eine Stimme fragt nach dem Wort.",
+   "ru": "Задний двор. Старый дворовый туалет. Ты стучишь. Голос спрашивает слово."
+  },
+  {
+   "cut": "password",
+   "emo": "shock",
+   "big": "TOKIO",
+   "text": "Du flüsterst: Tokio. Die Tür geht auf.",
+   "ru": "Ты шепчешь: «Токио». Дверь открывается."
+  },
+  {
+   "cut": "hole",
+   "emo": "fear",
+   "big": "12 m",
+   "text": "Im Boden ist ein Loch. Zwölf Meter tief. Eine Leiter führt nach unten.",
+   "ru": "В полу — дыра. Двенадцать метров вглубь. Вниз ведёт лестница.",
+   "caption": "Im Boden ist ein Loch. 12 Meter tief. Eine Leiter führt nach unten."
+  },
+  {
+   "cut": "tunnel",
+   "emo": "nervous",
+   "big": "145 m",
+   "text": "Der Tunnel ist so eng, dass du nur auf Knien kriechen kannst. Hundertfünfundvierzig Meter. Unter der Mauer durch.",
+   "ru": "Тоннель такой узкий, что ползти можно только на коленях. Сто сорок пять метров. Под Стеной.",
+   "caption": "Der Tunnel ist so eng, dass du nur auf Knien kriechen kannst. 145 Meter. Unter der Mauer durch."
+  },
+  {
+   "cut": "tunnelup",
+   "emo": "fear",
+   "big": "MAUER",
+   "text": "Über dir: Grenzsoldaten, Hunde, Scheinwerfer. Sie ahnen nichts.",
+   "ru": "Над тобой — пограничники, собаки, прожекторы. Они ничего не подозревают."
+  },
+  {
+   "cut": "light",
+   "emo": "shock",
+   "big": "WEST",
+   "text": "Dann siehst du Licht. Hände ziehen dich nach oben.",
+   "ru": "И тут ты видишь свет. Чьи-то руки тянут тебя наверх."
+  },
+  {
+   "cut": "bakery",
+   "emo": "laugh",
+   "big": "FREI",
+   "text": "Du stehst in einer alten Bäckerei. Im Westen. Du bist frei.",
+   "ru": "Ты стоишь в старой пекарне. На Западе. Ты свободен."
+  },
+  {
+   "cut": "betrayal",
+   "emo": "sad",
+   "big": "57",
+   "text": "Siebenundfünfzig Menschen schaffen es in zwei Nächten. Dann wird der Tunnel verraten. Schüsse fallen. Ein Grenzsoldat stirbt.",
+   "ru": "За две ночи прорываются пятьдесят семь человек. Потом тоннель выдают. Звучат выстрелы. Погибает пограничник.",
+   "caption": "57 Menschen schaffen es in 2 Nächten. Dann wird der Tunnel verraten. Schüsse fallen. Ein Grenzsoldat stirbt."
+  },
+  {
+   "cut": "files",
+   "emo": "shock",
+   "big": "DIE AKTEN",
+   "text": "Erst nach dem Fall der Mauer zeigen die Akten: Die tödliche Kugel kam von einem eigenen Kameraden.",
+   "ru": "Только после падения Стены документы показали: смертельная пуля была выпущена его же сослуживцем."
+  },
+  {
+   "cut": "endwest",
+   "emo": "laugh",
+   "big": "FREI",
+   "text": "Du bist zwanzig. Und du bist auf der anderen Seite.",
+   "ru": "Тебе двадцать. И ты — по ту сторону."
+  }
+ ]
+}

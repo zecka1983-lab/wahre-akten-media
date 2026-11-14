@@ -1,0 +1,118 @@
+{
+ "title": "Der Hauptmann von Köpenick",
+ "theme": "story",
+ "hook_text": "FALSCHER HAUPTMANN",
+ "music": {
+  "mood": "mystery",
+  "resolve": "papers",
+  "tick": [
+   "junkshop"
+  ],
+  "pulse": [
+   "khook",
+   "townhall"
+  ],
+  "riser": [
+   "cash",
+   "arrest"
+  ],
+  "hit": true,
+  "swoosh": false
+ },
+ "scenes": [
+  {
+   "cut": "khook",
+   "emo": "nervous",
+   "big": "1906",
+   "text": "Du marschierst mit einer Gruppe echter Soldaten ins Rathaus. Und niemand merkt, dass du gar kein Hauptmann bist.",
+   "ru": "Ты входишь в ратушу с отрядом настоящих солдат. И никто не замечает, что ты вовсе не капитан."
+  },
+  {
+   "cut": "workshop",
+   "emo": "sad",
+   "big": "BERLIN",
+   "text": "Berlin, neunzehnhundertsechs. Du bist Schuster, siebenundfünfzig Jahre alt. Fast dein halbes Leben hast du im Gefängnis verbracht.",
+   "ru": "Берлин, 1906 год. Ты сапожник, тебе 57 лет. Почти полжизни ты провёл в тюрьме.",
+   "caption": "Berlin, 1906. Du bist Schuster, 57 Jahre alt. Fast dein halbes Leben hast du im Gefängnis verbracht."
+  },
+  {
+   "cut": "workshop",
+   "emo": "sad",
+   "big": "KEIN PASS",
+   "text": "Ohne Pass bekommst du keine Arbeit. Und ohne Arbeit keinen Pass.",
+   "ru": "Без паспорта тебя не берут на работу. А без работы не дают паспорт."
+  },
+  {
+   "cut": "junkshop",
+   "emo": "smug",
+   "big": "DER PLAN",
+   "text": "Also kaufst du dir bei Trödlern Stück für Stück eine alte Hauptmannsuniform.",
+   "ru": "Тогда ты по частям скупаешь у старьёвщиков старую форму капитана."
+  },
+  {
+   "cut": "street",
+   "emo": "smug",
+   "big": "MIR NACH!",
+   "text": "Auf der Straße hältst du eine Gruppe Soldaten an und rufst: Mir nach! Und sie gehorchen sofort. Niemand fragt nach deinem Namen.",
+   "ru": "На улице ты останавливаешь группу солдат и кричишь: «За мной!» И они сразу подчиняются. Никто не спрашивает твоего имени."
+  },
+  {
+   "cut": "train",
+   "emo": "smug",
+   "big": "KÖPENICK",
+   "text": "Gemeinsam fahrt ihr mit der Bahn nach Köpenick.",
+   "ru": "Вместе вы едете на поезде в Кёпеник."
+  },
+  {
+   "cut": "townhall",
+   "emo": "smug",
+   "big": "RATHAUS",
+   "text": "Im Rathaus lässt du den Bürgermeister festnehmen. Kein Beamter wagt es, einem Offizier zu widersprechen.",
+   "ru": "В ратуше ты приказываешь арестовать бургомистра. Ни один чиновник не смеет возразить офицеру."
+  },
+  {
+   "cut": "cash",
+   "emo": "laugh",
+   "big": "KASSE",
+   "text": "Dann verlangst du die Stadtkasse. Rund viertausend Mark. Und du stellst ordentlich eine Quittung aus.",
+   "ru": "Потом требуешь городскую кассу. Около четырёх тысяч марок. И аккуратно выписываешь расписку.",
+   "caption": "Dann verlangst du die Stadtkasse. Rund 4.000 Mark. Und du stellst ordentlich eine Quittung aus."
+  },
+  {
+   "cut": "leave",
+   "emo": "smug",
+   "big": "WEG",
+   "text": "Danach verschwindest du einfach.",
+   "ru": "После этого ты просто исчезаешь."
+  },
+  {
+   "cut": "papers",
+   "emo": "laugh",
+   "big": "WELTWEIT",
+   "text": "Ganz Deutschland lacht. Zeitungen auf der ganzen Welt schreiben über den Hauptmann von Köpenick. Sogar der Kaiser soll darüber gelacht haben.",
+   "ru": "Вся Германия смеётся. Газеты по всему миру пишут о капитане из Кёпеника. Говорят, даже кайзер над этим смеялся."
+  },
+  {
+   "cut": "arrest",
+   "emo": "shock",
+   "big": "10 TAGE",
+   "text": "Zehn Tage später wirst du gefasst. Das Gericht gibt dir vier Jahre Gefängnis.",
+   "ru": "Через десять дней тебя ловят. Суд даёт тебе четыре года тюрьмы.",
+   "caption": "10 Tage später wirst du gefasst. Das Gericht gibt dir 4 Jahre Gefängnis."
+  },
+  {
+   "cut": "pardon",
+   "emo": "laugh",
+   "big": "GNADE",
+   "text": "Doch der Kaiser begnadigt dich vorzeitig. Du wirst berühmt.",
+   "ru": "Но кайзер досрочно тебя милует. Ты становишься знаменитым."
+  },
+  {
+   "cut": "kend",
+   "emo": "smug",
+   "big": "UNIFORM",
+   "text": "Du warst nie ein Hauptmann. Aber eine Uniform hat gereicht, damit alle gehorchen.",
+   "ru": "Ты никогда не был капитаном. Но формы хватило, чтобы все подчинялись."
+  }
+ ]
+}

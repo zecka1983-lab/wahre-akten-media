@@ -1,0 +1,223 @@
+{
+ "title": "Römer vs. Germanen: Die Varusschlacht",
+ "theme": "dialog",
+ "voices": {
+  "M": "5Axpbpycg8qWQ7LexavI",
+  "G": "uM8iMoqaSe1eDaJiWfxf"
+ },
+ "scenes": [
+  {
+   "speaker": "G",
+   "emo": "laugh",
+   "bg": "rain",
+   "big": "ROMS GRÖSSTE BLAMAGE",
+   "text": "Roms größte Blamage. Und Marcus will bis heute nicht darüber reden.",
+   "ru": "Самый большой позор Рима. И Маркус до сих пор не хочет об этом говорить.",
+   "cut": "ambush"
+  },
+  {
+   "speaker": "M",
+   "emo": "proud",
+   "bg": "camp",
+   "big": "ROM",
+   "text": "Wir Römer haben die halbe Welt erobert. Straßen, Thermen, Beton – alles von uns.",
+   "ru": "Мы, римляне, завоевали полмира. Дороги, бани, бетон — всё наше.",
+   "shots": [
+    "closeM",
+    "two"
+   ]
+  },
+  {
+   "speaker": "G",
+   "emo": "smug",
+   "bg": "camp",
+   "big": "9 n. Chr.",
+   "text": "Ja, ja. Und was ist im Jahr neun passiert, Marcus?",
+   "ru": "Ага-ага. А что было в девятом году, Маркус?",
+   "caption": "Ja, ja. Und was ist im Jahr 9 passiert, Marcus?",
+   "shots": [
+    "closeG",
+    "react"
+   ]
+  },
+  {
+   "speaker": "M",
+   "emo": "nervous",
+   "bg": "camp",
+   "big": "9 n. Chr.",
+   "text": "…Darüber reden wir nicht.",
+   "ru": "…Об этом мы не говорим.",
+   "shots": [
+    "closeM"
+   ],
+   "punch": 1
+  },
+  {
+   "speaker": "G",
+   "emo": "smug",
+   "bg": "camp",
+   "big": "3 LEGIONEN",
+   "text": "Doch. Genau darüber reden wir. Euer Feldherr Varus marschiert mit drei Legionen durch Germanien. Fast zwanzigtausend Mann.",
+   "ru": "Нет, говорим. Ваш полководец Вар идёт с тремя легионами через Германию. Почти двадцать тысяч человек.",
+   "caption": "Doch. Genau darüber reden wir. Euer Feldherr Varus marschiert mit 3 Legionen durch Germanien. Fast 20.000 Mann.",
+   "cut": "march"
+  },
+  {
+   "speaker": "M",
+   "emo": "proud",
+   "bg": "camp",
+   "big": "20.000",
+   "text": "Die beste Armee der Welt!",
+   "ru": "Лучшая армия мира!",
+   "shots": [
+    "closeM"
+   ]
+  },
+  {
+   "speaker": "G",
+   "emo": "smug",
+   "bg": "forest",
+   "big": "ARMINIUS",
+   "text": "Und wer zeigt euch den Weg? Arminius. Ein Germane, der selbst in der römischen Armee gedient hat.",
+   "ru": "А кто показывает вам дорогу? Арминий. Германец, который сам служил в римской армии.",
+   "cut": "arminius"
+  },
+  {
+   "speaker": "M",
+   "emo": "angry",
+   "bg": "forest",
+   "big": "ARMINIUS",
+   "text": "Er war unser Freund! Er hatte sogar das römische Bürgerrecht!",
+   "ru": "Он был нашим другом! У него даже было римское гражданство!",
+   "shots": [
+    "closeM",
+    "react"
+   ]
+  },
+  {
+   "speaker": "G",
+   "emo": "smug",
+   "bg": "rain",
+   "big": "TEUTOBURGER WALD",
+   "text": "Tja. Und dann führt er euch mitten in den Teutoburger Wald. Es regnet, alles ist Matsch, und eure Kolonne ist kilometerlang.",
+   "ru": "Ну да. А потом он заводит вас в самую чащу Тевтобургского леса. Дождь, кругом грязь, а ваша колонна растянулась на километры.",
+   "cut": "march_rain"
+  },
+  {
+   "speaker": "M",
+   "emo": "sad",
+   "bg": "rain",
+   "big": "TEUTOBURGER WALD",
+   "text": "Unsere Schilde waren nass, unsere Sandalen voller Schlamm…",
+   "ru": "Щиты мокрые, сандалии в грязи…",
+   "shots": [
+    "closeM"
+   ]
+  },
+  {
+   "speaker": "G",
+   "emo": "laugh",
+   "bg": "rain",
+   "big": "!",
+   "text": "…und hinter jedem Baum ein Germane.",
+   "ru": "…а за каждым деревом германец.",
+   "prop": "peek",
+   "cut": "ambush"
+  },
+  {
+   "speaker": "M",
+   "emo": "shock",
+   "bg": "rain",
+   "big": "3 TAGE",
+   "text": "Drei Tage lang! Drei ganze Legionen – einfach weg.",
+   "ru": "Три дня! Три целых легиона — просто исчезли.",
+   "caption": "3 Tage lang! 3 ganze Legionen – einfach weg.",
+   "prop": "vanish",
+   "shots": [
+    "two",
+    "closeM"
+   ]
+  },
+  {
+   "speaker": "G",
+   "emo": "smug",
+   "bg": "rome",
+   "big": "AUGUSTUS",
+   "text": "Und was hat euer Kaiser Augustus gesagt?",
+   "ru": "А что сказал ваш император Август?",
+   "shots": [
+    "closeG"
+   ]
+  },
+  {
+   "speaker": "M",
+   "emo": "sad",
+   "bg": "rome",
+   "big": "AUGUSTUS",
+   "text": "Er soll gerufen haben: „Varus, gib mir meine Legionen zurück!“",
+   "ru": "Говорят, он кричал: «Вар, верни мне мои легионы!»",
+   "cut": "augustus"
+  },
+  {
+   "speaker": "G",
+   "emo": "smug",
+   "bg": "rome",
+   "big": "XVII XVIII XIX",
+   "text": "Und die Nummern siebzehn, achtzehn und neunzehn hat Rom danach nie wieder vergeben.",
+   "ru": "А номера семнадцать, восемнадцать и девятнадцать Рим после этого больше никогда не присваивал.",
+   "caption": "Und die Nummern 17, 18 und 19 hat Rom danach nie wieder vergeben.",
+   "cut": "numbers"
+  },
+  {
+   "speaker": "M",
+   "emo": "nervous",
+   "bg": "camp",
+   "big": "ROM",
+   "text": "Okay, okay. Aber wir hatten Fußbodenheizung.",
+   "ru": "Ладно, ладно. Зато у нас были тёплые полы.",
+   "prop": "heat",
+   "shots": [
+    "closeM",
+    "react"
+   ]
+  },
+  {
+   "speaker": "G",
+   "emo": "smug",
+   "bg": "forest",
+   "big": "GERMANIEN",
+   "text": "Und wir hatten den Wald.",
+   "ru": "А у нас был лес.",
+   "shots": [
+    "closeG"
+   ],
+   "punch": 1
+  },
+  {
+   "speaker": "G",
+   "emo": "laugh",
+   "bg": "camp",
+   "big": "?",
+   "text": "Wer hat gewonnen – Römer oder Germanen? Schreib's in die Kommentare!",
+   "ru": "Кто победил — римляне или германцы? Пиши в комментариях!",
+   "shots": [
+    "two"
+   ]
+  },
+  {
+   "speaker": "M",
+   "emo": "proud",
+   "bg": "camp",
+   "big": "ROM",
+   "text": "Römer. Natürlich.",
+   "ru": "Римляне. Естественно.",
+   "shots": [
+    "closeM"
+   ],
+   "punch": 1
+  }
+ ],
+ "audio_fx": {
+  "G": "highpass=f=90,equalizer=f=3500:t=q:w=1.2:g=4,treble=g=3:f=7000"
+ }
+}

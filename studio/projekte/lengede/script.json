@@ -1,0 +1,130 @@
+{
+ "title": "Du bist Bergmann – Lengede 1963",
+ "theme": "story",
+ "hook_text": "14 TAGE IM DUNKELN",
+ "music": {
+  "mood": "mystery",
+  "resolve": "hole",
+  "tick": [
+   "days"
+  ],
+  "pulse": [
+   "drillhook",
+   "flood",
+   "cavity"
+  ],
+  "riser": [
+   "drill",
+   "rise"
+  ],
+  "hit": true,
+  "swoosh": false
+ },
+ "scenes": [
+  {
+   "cut": "drillhook",
+   "emo": "fear",
+   "big": "14 TAGE",
+   "text": "Seit vierzehn Tagen sitzt du in völliger Dunkelheit. Und dann hörst du einen Bohrer.",
+   "ru": "Уже четырнадцать дней ты сидишь в полной темноте. И вдруг слышишь бур.",
+   "caption": "Seit 14 Tagen sitzt du in völliger Dunkelheit. Und dann hörst du einen Bohrer."
+  },
+  {
+   "cut": "mine",
+   "emo": "nervous",
+   "big": "VORHER",
+   "text": "Vierzehn Tage vorher.",
+   "ru": "За четырнадцать дней до этого.",
+   "caption": "14 Tage vorher."
+  },
+  {
+   "cut": "mine",
+   "emo": "ok",
+   "big": "1963",
+   "text": "Lengede in Niedersachsen, neunzehnhundertdreiundsechzig. Du bist Bergmann in einer Eisenerzgrube. Eine ganz normale Schicht.",
+   "ru": "Ленгеде, Нижняя Саксония, 1963 год. Ты горняк на железорудной шахте. Обычная смена.",
+   "caption": "Lengede in Niedersachsen, 1963. Du bist Bergmann in einer Eisenerzgrube. Eine ganz normale Schicht."
+  },
+  {
+   "cut": "flood",
+   "emo": "shock",
+   "big": "WASSER!",
+   "text": "Plötzlich bricht das Wasser eines riesigen Klärteichs in die Grube ein.",
+   "ru": "Внезапно в шахту прорывается вода из огромного пруда-отстойника."
+  },
+  {
+   "cut": "flood",
+   "emo": "fear",
+   "big": "DUNKEL",
+   "text": "Schlamm und Wasser schießen durch die Stollen. Die Lampen gehen aus.",
+   "ru": "Грязь и вода несутся по штольням. Гаснут лампы."
+  },
+  {
+   "cut": "cavity",
+   "emo": "nervous",
+   "big": "11",
+   "text": "Du rennst. Mit zehn anderen Männern findest du einen Hohlraum, in den das Wasser nicht kommt. Die Luft ist stickig. Niemand weiß, ob euch jemand sucht.",
+   "ru": "Ты бежишь. Вместе с десятью другими мужчинами ты находишь пустоту в породе, куда не доходит вода. Воздух спёртый. Никто не знает, ищут ли вас вообще.",
+   "caption": "Du rennst. Mit 10 anderen Männern findest du einen Hohlraum, in den das Wasser nicht kommt. Die Luft ist stickig. Niemand weiß, ob euch jemand sucht."
+  },
+  {
+   "cut": "surface",
+   "emo": "sad",
+   "big": "OBEN",
+   "text": "Oben glauben viele: Hier unten lebt niemand mehr.",
+   "ru": "Наверху многие уверены: здесь внизу больше никто не выжил."
+  },
+  {
+   "cut": "days",
+   "emo": "sad",
+   "big": "TAG 7",
+   "text": "Tage vergehen. Kein Essen. Nur das Wasser, das von der Decke tropft. Ihr klopft gegen den Fels.",
+   "ru": "Проходят дни. Еды нет. Только вода, которая капает с потолка. Вы стучите по скале."
+  },
+  {
+   "cut": "drill",
+   "emo": "shock",
+   "big": "TAG 10",
+   "text": "Dann, nach zehn Tagen: ein Geräusch. Ein Bohrer. Ein winziges Loch in der Decke.",
+   "ru": "И вот, через десять дней: звук. Бур. Крошечная дыра в потолке.",
+   "caption": "Dann, nach 10 Tagen: ein Geräusch. Ein Bohrer. Ein winziges Loch in der Decke."
+  },
+  {
+   "cut": "hole",
+   "emo": "laugh",
+   "big": "LICHT",
+   "text": "Durch das Loch kommen Licht, Essen und eine Stimme: Wir holen euch.",
+   "ru": "Через дыру к вам приходят свет, еда и голос: «Мы вас вытащим»."
+  },
+  {
+   "cut": "capsule",
+   "emo": "nervous",
+   "big": "KAPSEL",
+   "text": "Sie bohren ein größeres Loch. Und lassen eine enge Rettungskapsel herab, kaum breiter als deine Schultern.",
+   "ru": "Они бурят дыру побольше. И опускают узкую спасательную капсулу, едва шире твоих плеч."
+  },
+  {
+   "cut": "rise",
+   "emo": "laugh",
+   "big": "11",
+   "text": "Einer nach dem anderen fahrt ihr nach oben. Elf Männer. Nach vierzehn Tagen. Die Fahrt nach oben fühlt sich an wie eine Ewigkeit.",
+   "ru": "Один за другим вы поднимаетесь наверх. Одиннадцать мужчин. Спустя четырнадцать дней. Подъём наверх кажется вечностью.",
+   "caption": "Einer nach dem anderen fahrt ihr nach oben. 11 Männer. Nach 14 Tagen. Die Fahrt nach oben fühlt sich an wie eine Ewigkeit."
+  },
+  {
+   "cut": "crowd",
+   "emo": "laugh",
+   "big": "WUNDER",
+   "text": "Ganz Deutschland sieht im Fernsehen zu. Man nennt es: das Wunder von Lengede.",
+   "ru": "Вся Германия смотрит по телевизору. Это назовут «Чудом Ленгеде»."
+  },
+  {
+   "cut": "sky",
+   "emo": "laugh",
+   "big": "FREI",
+   "text": "Vierzehn Tage hast du im Dunkeln gesessen. Jetzt siehst du den Himmel.",
+   "ru": "Четырнадцать дней ты просидел в темноте. А теперь видишь небо.",
+   "caption": "14 Tage hast du im Dunkeln gesessen. Jetzt siehst du den Himmel."
+  }
+ ]
+}

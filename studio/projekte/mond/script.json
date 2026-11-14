@@ -1,0 +1,90 @@
+{
+ "title": "Was passiert, wenn der Mond verschwindet?",
+ "scenes": [
+  {
+   "big": "MOND",
+   "tired": 0,
+   "text": "Was passiert, wenn heute Nacht der Mond einfach verschwindet? Die Folgen sind größer, als du denkst.",
+   "ru": "Что будет, если сегодня ночью Луна просто исчезнет? Последствия больше, чем кажется.",
+   "moon": 1
+  },
+  {
+   "big": "?",
+   "tired": 0,
+   "text": "Bleib bis zum Ende. Der letzte Punkt betrifft dein ganzes Leben.",
+   "ru": "Досмотри: последний пункт касается всей твоей жизни.",
+   "moon": 0
+  },
+  {
+   "big": "NACHT",
+   "tired": 0.2,
+   "text": "Zuerst wird es dunkel. Richtig dunkel. Jede Nacht wäre so schwarz wie bei Neumond.",
+   "ru": "Сначала станет темно. Каждая ночь как в новолуние.",
+   "moon": 0
+  },
+  {
+   "big": "MEER",
+   "tired": 0.4,
+   "text": "Dann die Meere. Der Mond ist der Hauptgrund für Ebbe und Flut. Ohne ihn bleiben nur die viel schwächeren Gezeiten durch die Sonne.",
+   "ru": "Потом моря: Луна — главная причина приливов. Останутся только слабые приливы от Солнца.",
+   "moon": 0
+  },
+  {
+   "big": "KORALLEN",
+   "tired": 0.4,
+   "text": "Für viele Tiere ist das eine Katastrophe. Korallen am Great Barrier Reef vermehren sich nach dem Mondkalender. Ohne Mond verlieren sie ihren Takt.",
+   "ru": "Для животных это катастрофа: кораллы Большого Барьерного рифа размножаются по лунному календарю.",
+   "moon": 0
+  },
+  {
+   "big": "TURTLES",
+   "tired": 0.4,
+   "text": "Babyschildkröten schlüpfen nachts und laufen zum hellen Horizont über dem Meer. Im Dunkeln verirren sie sich öfter.",
+   "ru": "Черепашата вылупляются ночью и бегут к светлому горизонту над морем. В темноте они чаще теряются.",
+   "moon": 0
+  },
+  {
+   "big": "24 h",
+   "tired": 0.5,
+   "text": "Der Mond bremst die Drehung der Erde seit Milliarden Jahren ab. Ohne ihn würde dieses Bremsen einfach aufhören.",
+   "ru": "Луна миллиарды лет тормозит вращение Земли. Без неё торможение прекратится.",
+   "moon": 0
+  },
+  {
+   "big": "ACHSE",
+   "tired": 0.8,
+   "text": "Und jetzt das Wichtigste: Der Mond hält die Neigung der Erdachse stabil. Ohne ihn könnte sie über Millionen Jahre stark taumeln.",
+   "ru": "Главное: Луна держит наклон земной оси. Без неё ось за миллионы лет начала бы сильно раскачиваться.",
+   "moon": 0
+  },
+  {
+   "big": "KLIMA",
+   "tired": 1,
+   "text": "Die Folge wären extreme Klimaschwankungen. Eiszeiten und Hitzeperioden, viel heftiger als heute.",
+   "ru": "Итог — резкие скачки климата: ледниковые периоды и жара, намного сильнее нынешних.",
+   "moon": 0
+  },
+  {
+   "big": "4 cm",
+   "tired": 0,
+   "text": "Zum Glück bleibt der Mond. Aber er entfernt sich jedes Jahr etwa vier Zentimeter von uns.",
+   "ru": "К счастью, Луна остаётся. Но каждый год она удаляется от нас примерно на 4 см.",
+   "moon": 1
+  },
+  {
+   "big": "DU?",
+   "tired": 0,
+   "text": "Hättest du gedacht, dass der Mond so wichtig ist? Schreib ja oder nein in die Kommentare.",
+   "ru": "Думал, что Луна так важна? Пиши «да» или «нет» в комментарии.",
+   "moon": 1
+  },
+  {
+   "big": "FOLGEN",
+   "tired": 0,
+   "text": "Folge mir für mehr: Was wäre, wenn…",
+   "ru": "Подпишись на продолжение рубрики «Что было бы, если…».",
+   "moon": 1
+  }
+ ],
+ "theme": "mond"
+}

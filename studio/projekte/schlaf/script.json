@@ -1,0 +1,87 @@
+{
+ "title": "Was passiert, wenn du nicht schläfst?",
+ "scenes": [
+  {
+   "big": "0 h",
+   "tired": 0.0,
+   "text": "Was passiert mit deinem Körper, wenn du einfach nicht mehr schläfst? Stunde für Stunde."
+  },
+  {
+   "big": "?",
+   "tired": 0.0,
+   "text": "Bleib bis zum Ende. Tag drei ist wirklich unheimlich."
+  },
+  {
+   "big": "16 h",
+   "tired": 0.2,
+   "text": "Nach sechzehn Stunden wach sammelt dein Gehirn einen Stoff namens Adenosin. Genau der macht dich müde.",
+   "caption": "Nach 16 Stunden wach sammelt dein Gehirn einen Stoff namens Adenosin. Genau der macht dich müde."
+  },
+  {
+   "big": "24 h",
+   "tired": 0.35,
+   "text": "Nach vierundzwanzig Stunden ist deine Reaktionszeit so schlecht, als hättest du etwa ein Promille Alkohol im Blut.",
+   "caption": "Nach 24 Stunden ist deine Reaktionszeit so schlecht, als hättest du etwa 1 Promille Alkohol im Blut."
+  },
+  {
+   "big": "24 h",
+   "tired": 0.4,
+   "text": "Du wirst gereizt, vergesslich, und dein Körper schüttet mehr Stresshormone aus."
+  },
+  {
+   "big": "36 h",
+   "tired": 0.55,
+   "text": "Nach sechsunddreißig Stunden schaltet dein Gehirn heimlich ab. Sekundenschlaf. Für ein paar Sekunden bist du einfach weg, ohne es zu merken.",
+   "caption": "Nach 36 Stunden schaltet dein Gehirn heimlich ab. Sekundenschlaf. Für ein paar Sekunden bist du einfach weg, ohne es zu merken."
+  },
+  {
+   "big": "!",
+   "tired": 0.6,
+   "text": "Am Steuer kann genau das tödlich enden."
+  },
+  {
+   "big": "48 h",
+   "tired": 0.7,
+   "text": "Nach achtundvierzig Stunden wird dein Immunsystem schwächer. Du wirst anfälliger für Infekte.",
+   "caption": "Nach 48 Stunden wird dein Immunsystem schwächer. Du wirst anfälliger für Infekte."
+  },
+  {
+   "big": "72 h",
+   "tired": 0.85,
+   "text": "Und nach zweiundsiebzig Stunden sehen viele Menschen Dinge, die gar nicht da sind. Halluzinationen.",
+   "caption": "Und nach 72 Stunden sehen viele Menschen Dinge, die gar nicht da sind. Halluzinationen."
+  },
+  {
+   "big": "72 h",
+   "tired": 0.9,
+   "text": "Wände scheinen sich zu bewegen. Schatten sehen plötzlich aus wie Menschen."
+  },
+  {
+   "big": "264 h",
+   "tired": 1.0,
+   "text": "Der berühmteste Rekord? Neunzehnhundertvierundsechzig blieb der Schüler Randy Gardner elf Tage wach. Zweihundertvierundsechzig Stunden.",
+   "caption": "Der berühmteste Rekord? 1964 blieb der Schüler Randy Gardner 11 Tage wach. 264 Stunden."
+  },
+  {
+   "big": "264 h",
+   "tired": 0.3,
+   "text": "Danach schlief er sich einfach aus und erholte sich wieder."
+  },
+  {
+   "big": "STOP",
+   "tired": 0.3,
+   "text": "Aber Ärzte warnen: Mach das auf keinen Fall nach."
+  },
+  {
+   "big": "DU?",
+   "tired": 0.0,
+   "text": "Und jetzt du: Wie viele Stunden hast du letzte Nacht geschlafen? Schreib es in die Kommentare."
+  },
+  {
+   "big": "FOLGEN",
+   "tired": 0.0,
+   "text": "Und folge mir für mehr Dinge, die dein Körper heimlich tut."
+  }
+ ],
+ "theme": "schlaf"
+}

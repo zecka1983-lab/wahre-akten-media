@@ -1,0 +1,99 @@
+{
+ "title": "Die Ballonflucht aus der DDR",
+ "theme": "story",
+ "scenes": [
+  {
+   "cut": "hook",
+   "big": "28 MIN",
+   "text": "Zwei Familien. Acht Menschen. Ein selbstgenähter Ballon – und achtundzwanzig Minuten, um über die bestbewachte Grenze Europas zu fliegen.",
+   "ru": "Две семьи. Восемь человек. Самодельный воздушный шар — и 28 минут, чтобы перелететь самую охраняемую границу Европы.",
+   "caption": "Zwei Familien. 8 Menschen. Ein selbstgenähter Ballon – und 28 Minuten, um über die bestbewachte Grenze Europas zu fliegen."
+  },
+  {
+   "cut": "map",
+   "big": "1979",
+   "text": "Pößneck in der DDR, neunzehnhundertneunundsiebzig. Die Familien Strelzyk und Wetzel wollen nur eins: raus. In den Westen.",
+   "ru": "Пёснек, ГДР, 1979 год. Семьи Штрельцик и Ветцель хотят только одного: вырваться. На Запад.",
+   "caption": "Pößneck in der DDR, 1979. Die Familien Strelzyk und Wetzel wollen nur eins: raus. In den Westen."
+  },
+  {
+   "cut": "border",
+   "big": "GRENZE",
+   "text": "Doch dazwischen liegt die Grenze. Zäune, Minen, Wachtürme. Wer erwischt wird, landet im Gefängnis – oder wird erschossen.",
+   "ru": "Но между ними граница. Заборы, мины, вышки. Кого поймают — тюрьма. Или пуля."
+  },
+  {
+   "cut": "sewing",
+   "big": "DER PLAN",
+   "text": "Ihr Plan klingt verrückt: ein Heißluftballon. Selbst gebaut. Nachts, auf einer alten Nähmaschine.",
+   "ru": "Их план звучит безумно: воздушный шар. Самодельный. Ночами, на старой швейной машинке."
+  },
+  {
+   "cut": "shops",
+   "big": "STOFF",
+   "text": "Den Stoff kaufen sie in vielen verschiedenen Läden – immer nur kleine Mengen, damit niemand misstrauisch wird.",
+   "ru": "Ткань покупают в разных магазинах — понемногу, чтобы никто ничего не заподозрил."
+  },
+  {
+   "cut": "crash",
+   "big": "VERSUCH 1",
+   "text": "Juli neunzehnhundertneunundsiebzig. Der erste Versuch. Der Ballon steigt – und stürzt ab. Nur wenige hundert Meter vor der Grenze.",
+   "ru": "Июль 1979-го. Первая попытка. Шар взлетает — и падает. Всего в нескольких сотнях метров от границы.",
+   "caption": "Juli 1979. Der erste Versuch. Der Ballon steigt – und stürzt ab. Nur wenige hundert Meter vor der Grenze."
+  },
+  {
+   "cut": "stasi",
+   "big": "STASI",
+   "text": "Sie schaffen es unbemerkt zurück. Doch dann findet die Stasi den Ballon. Und beginnt zu suchen.",
+   "ru": "Им удаётся незаметно вернуться. Но потом Штази находит шар. И начинает поиски."
+  },
+  {
+   "cut": "countdown",
+   "big": "6 WOCHEN",
+   "text": "Jetzt läuft die Zeit. In nur sechs Wochen nähen sie einen neuen Ballon. Größer. Über tausend Quadratmeter Stoff.",
+   "ru": "Время пошло. Всего за шесть недель они шьют новый шар. Больше. Больше тысячи квадратных метров ткани.",
+   "caption": "Jetzt läuft die Zeit. In nur 6 Wochen nähen sie einen neuen Ballon. Größer. Über 1.000 Quadratmeter Stoff."
+  },
+  {
+   "cut": "launch",
+   "big": "16.09.1979",
+   "text": "Sechzehnter September, mitten in der Nacht. Acht Menschen auf einer winzigen Plattform. Der Brenner faucht. Sie heben ab.",
+   "ru": "16 сентября, глубокая ночь. Восемь человек на крошечной платформе. Ревёт горелка. Они взлетают.",
+   "caption": "16. September, mitten in der Nacht. 8 Menschen auf einer winzigen Plattform. Der Brenner faucht. Sie heben ab."
+  },
+  {
+   "cut": "flight",
+   "big": "2000 m",
+   "text": "Zweitausend Meter hoch. Eiskalt. Unter ihnen die Scheinwerfer der Grenze. Und dann wird das Gas knapp.",
+   "ru": "Две тысячи метров. Ледяной холод. Внизу прожекторы границы. И тут заканчивается газ.",
+   "caption": "2.000 Meter hoch. Eiskalt. Unter ihnen die Scheinwerfer der Grenze. Und dann wird das Gas knapp."
+  },
+  {
+   "cut": "landing",
+   "big": "WO?",
+   "text": "Nach achtundzwanzig Minuten setzen sie auf einem Feld auf. Doch wo? Im Westen – oder wieder in der DDR?",
+   "ru": "Через 28 минут они садятся в поле. Но где? На Западе — или снова в ГДР?",
+   "caption": "Nach 28 Minuten setzen sie auf einem Feld auf. Doch wo? Im Westen – oder wieder in der DDR?"
+  },
+  {
+   "cut": "police",
+   "big": "BAYERN",
+   "text": "Ein Polizeiauto kommt näher. Sie halten den Atem an. Dann die Antwort: Sie sind in Bayern. Sie sind frei.",
+   "ru": "Подъезжает полицейская машина. Они замирают. И тут ответ: они в Баварии. Они свободны."
+  },
+  {
+   "cut": "cta",
+   "big": "?",
+   "text": "Hättest du dich getraut? Schreib es in die Kommentare – und folge für die nächste unglaubliche Geschichte.",
+   "ru": "А ты бы решился? Пиши в комментариях — и подписывайся на следующую невероятную историю."
+  }
+ ],
+ "music": {
+  "mood": "mystery",
+  "resolve": "police",
+  "tick": [
+   "hook",
+   "countdown"
+  ]
+ }
+}

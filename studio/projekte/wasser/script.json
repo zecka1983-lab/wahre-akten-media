@@ -1,0 +1,91 @@
+{
+ "title": "Was passiert, wenn du 3 Tage nichts trinkst?",
+ "scenes": [
+  {
+   "big": "0 h",
+   "tired": 0,
+   "text": "Was passiert mit deinem Körper, wenn du drei Tage lang keinen einzigen Schluck trinkst?",
+   "ru": "Что будет с твоим телом, если целых три дня не сделать ни одного глотка воды?",
+   "ru_caption": "Что будет с твоим телом, если целых 3 дня не сделать ни одного глотка воды?"
+  },
+  {
+   "big": "?",
+   "tired": 0,
+   "text": "Bleib dran. Am Ende erzähle ich dir von einem Mann, der achtzehn Tage überlebt hat.",
+   "ru": "Досмотри до конца. В конце я расскажу о человеке, который выжил восемнадцать дней.",
+   "ru_caption": "Досмотри до конца. В конце я расскажу о человеке, который выжил 18 дней."
+  },
+  {
+   "big": "6 h",
+   "tired": 0.15,
+   "text": "Schon nach ein paar Stunden fehlen dir ein bis zwei Prozent Wasser. Du hast Durst und kannst dich schlechter konzentrieren.",
+   "ru": "Уже через несколько часов тебе не хватает одного-двух процентов воды. Появляется жажда, и становится труднее сосредоточиться.",
+   "ru_caption": "Уже через несколько часов тебе не хватает 1–2 процентов воды. Появляется жажда, и становится труднее сосредоточиться."
+  },
+  {
+   "big": "12 h",
+   "tired": 0.3,
+   "text": "Deine Nieren schalten auf Sparmodus. Dein Urin wird dunkel, weil dein Körper jeden Tropfen festhält.",
+   "ru": "Почки переходят в режим экономии. Моча темнеет, потому что тело удерживает каждую каплю."
+  },
+  {
+   "big": "24 h",
+   "tired": 0.45,
+   "text": "Nach einem Tag bekommst du Kopfschmerzen. Dein Blut wird dicker, und dein Herz muss schneller schlagen.",
+   "ru": "Через сутки начинает болеть голова. Кровь становится гуще, и сердцу приходится биться чаще."
+  },
+  {
+   "big": "24 h",
+   "tired": 0.55,
+   "text": "Dein Mund ist trocken, deine Haut wird schlaff, und beim Aufstehen wird dir schwindelig.",
+   "ru": "Во рту пересыхает, кожа становится дряблой, а когда встаёшь, кружится голова."
+  },
+  {
+   "big": "48 h",
+   "tired": 0.75,
+   "text": "Nach zwei Tagen wirst du verwirrt. Du kannst kaum noch klar denken, und deine Muskeln werden schwach.",
+   "ru": "Через двое суток мысли начинают путаться. Становится трудно ясно думать, мышцы слабеют."
+  },
+  {
+   "big": "72 h",
+   "tired": 0.95,
+   "text": "Nach etwa drei Tagen wird es lebensgefährlich. Die Nieren können versagen.",
+   "ru": "Примерно через трое суток жизнь оказывается под угрозой. Почки могут отказать, и без помощи врачей организм может не выдержать."
+  },
+  {
+   "big": "3-3-3",
+   "tired": 0.6,
+   "text": "Deshalb gibt es die Regel: drei Minuten ohne Luft, drei Tage ohne Wasser, drei Wochen ohne Essen.",
+   "ru": "Поэтому есть правило трёх: три минуты без воздуха, три дня без воды, три недели без еды.",
+   "ru_caption": "Поэтому есть правило трёх: 3 минуты без воздуха, 3 дня без воды, 3 недели без еды."
+  },
+  {
+   "big": "18 Tage",
+   "tired": 0.8,
+   "text": "Aber neunzehnhundertneunundsiebzig wurde in Österreich ein junger Mann in einer Polizeizelle vergessen. Andreas Mihavecz.",
+   "ru": "Но в тысяча девятьсот семьдесят девятом году в Австрии в камере полиции забыли молодого человека. Его звали Андреас Михавец.",
+   "ru_caption": "Но в 1979 году в Австрии в камере полиции забыли молодого человека. Его звали Андреас Михавец."
+  },
+  {
+   "big": "18 Tage",
+   "tired": 0.9,
+   "text": "Er leckte Kondenswasser von den Wänden und überlebte achtzehn Tage. Ein Rekord, den niemand nachmachen sollte.",
+   "ru": "Он слизывал капли конденсата со стен и продержался восемнадцать дней. Это рекорд, который никому не стоит повторять.",
+   "ru_caption": "Он слизывал капли конденсата со стен и продержался 18 дней. Это рекорд, который никому не стоит повторять."
+  },
+  {
+   "big": "DU?",
+   "tired": 0.1,
+   "text": "Und jetzt ehrlich: Wie viel Wasser trinkst du am Tag? Schreib es in die Kommentare.",
+   "ru": "А теперь честно: сколько воды ты пьёшь за день? Напиши в комментариях."
+  },
+  {
+   "big": "FOLGEN",
+   "tired": 0,
+   "text": "Folge mir für Teil zwei: Was passiert, wenn du drei Wochen nichts isst?",
+   "ru": "Подпишись, чтобы не пропустить вторую часть: что будет, если три недели ничего не есть?",
+   "ru_caption": "Подпишись, чтобы не пропустить вторую часть: что будет, если 3 недели ничего не есть?"
+  }
+ ],
+ "theme": "wasser"
+}

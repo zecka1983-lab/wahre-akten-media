@@ -1,0 +1,85 @@
+{
+ "title": "Tunnel 57",
+ "theme": "story",
+ "music": {
+  "mood": "mystery",
+  "resolve": "files",
+  "tick": [
+   "digging",
+   "crawl"
+  ]
+ },
+ "scenes": [
+  {
+   "cut": "hook",
+   "big": "?",
+   "text": "Ihr Weg in die Freiheit begann auf einem Klo.",
+   "ru": "Их путь к свободе начался в туалете."
+  },
+  {
+   "cut": "berlin",
+   "big": "1964",
+   "text": "Berlin, neunzehnhundertvierundsechzig. Seit drei Jahren teilt die Mauer die Stadt. Auf der einen Seite deine Familie. Auf der anderen du. Wer rüber will, riskiert sein Leben.",
+   "ru": "Берлин, 1964 год. Уже три года Стена делит город. По одну сторону твоя семья. По другую — ты. Кто хочет перебраться — рискует жизнью.",
+   "caption": "Berlin, 1964. Seit 3 Jahren teilt die Mauer die Stadt. Auf der einen Seite deine Familie. Auf der anderen du. Wer rüber will, riskiert sein Leben."
+  },
+  {
+   "cut": "bakery",
+   "big": "BÄCKEREI",
+   "text": "Im Westen, in einer alten Bäckerei in der Bernauer Straße, fangen Studenten an zu graben. Heimlich. Direkt unter der Mauer durch.",
+   "ru": "На Западе, в старой пекарне на Бернауэр-штрассе, студенты начинают копать. Тайно. Прямо под Стеной."
+  },
+  {
+   "cut": "digging",
+   "big": "12 m",
+   "text": "Zwölf Meter unter der Erde schuften sie monatelang. Eimer für Eimer, im Licht nackter Glühbirnen.",
+   "ru": "На глубине двенадцати метров они месяцами вкалывают. Ведро за ведром, при свете голых лампочек.",
+   "caption": "12 Meter unter der Erde schuften sie monatelang. Eimer für Eimer, im Licht nackter Glühbirnen."
+  },
+  {
+   "cut": "exit",
+   "big": "145 m",
+   "text": "Nach hundertfünfundvierzig Metern kommen sie im Osten heraus. Mitten in einem alten Toilettenhäuschen im Hinterhof.",
+   "ru": "Через 145 метров они выходят на Востоке. Прямо в старом дворовом туалете.",
+   "caption": "Nach 145 Metern kommen sie im Osten heraus. Mitten in einem alten Toilettenhäuschen im Hinterhof."
+  },
+  {
+   "cut": "password",
+   "big": "TOKIO",
+   "text": "Wer fliehen will, muss an der Tür nur ein Wort sagen: Tokio. Wer es nicht kennt, kommt nicht hinein.",
+   "ru": "Кто хочет бежать, должен сказать у двери одно слово: «Токио». Кто его не знает — не войдёт."
+  },
+  {
+   "cut": "crawl",
+   "big": "57",
+   "text": "In zwei Nächten im Oktober kriechen siebenundfünfzig Menschen durch den Tunnel. Kinder, Großeltern, Paare. Auf Knien, im Dunkeln.",
+   "ru": "За две октябрьские ночи 57 человек проползают через тоннель. Дети, бабушки и дедушки, пары. На коленях, в темноте.",
+   "caption": "In 2 Nächten im Oktober kriechen 57 Menschen durch den Tunnel. Kinder, Großeltern, Paare. Auf Knien, im Dunkeln."
+  },
+  {
+   "cut": "betrayal",
+   "big": "VERRATEN",
+   "text": "Doch in der zweiten Nacht stehen plötzlich Soldaten im Hinterhof. Jemand hat den Tunnel verraten. Schüsse fallen.",
+   "ru": "Но во вторую ночь во дворе вдруг появляются солдаты. Кто-то выдал тоннель. Звучат выстрелы."
+  },
+  {
+   "cut": "soldier",
+   "big": "1 TOTER",
+   "text": "Ein junger Grenzsoldat stirbt. Die DDR erklärt die Fluchthelfer zu Mördern.",
+   "ru": "Молодой пограничник погибает. ГДР объявляет помощников беглецов убийцами."
+  },
+  {
+   "cut": "files",
+   "big": "DIE AKTEN",
+   "text": "Erst nach dem Fall der Mauer zeigen die Akten die Wahrheit: Die tödliche Kugel kam von einem eigenen Kameraden.",
+   "ru": "Только после падения Стены документы показывают правду: смертельная пуля была выпущена его же сослуживцем."
+  },
+  {
+   "cut": "end",
+   "big": "?",
+   "text": "Hättest du dich durch diesen Tunnel getraut? Siebenundfünfzig Menschen haben es getan.",
+   "ru": "А ты бы решился пролезть через этот тоннель? Пятьдесят семь человек решились.",
+   "caption": "Hättest du dich durch diesen Tunnel getraut? 57 Menschen haben es getan."
+  }
+ ]
+}
