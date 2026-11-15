@@ -1,0 +1,105 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Zombie Farm Sheet</title>
+<style>
+  body{margin:0;background:#0a0c12;font-family:'Inter Display','Inter',sans-serif;color:#e8e4d8}
+  #sheet{width:2400px}
+  h1{font-weight:900;font-size:64px;margin:0;padding:50px 60px 10px;letter-spacing:-1px}
+  h1 span{color:#ffb020}
+  .sub{padding:0 60px 20px;font-size:26px;color:#9aa0ad}
+  h2{font-size:34px;font-weight:800;margin:30px 60px 12px;color:#ffb020;text-transform:uppercase;letter-spacing:2px}
+  .row{display:flex;gap:24px;padding:0 60px;flex-wrap:wrap;align-items:flex-start}
+  .cell{background:#141824;border-radius:18px;overflow:hidden;text-align:center}
+  .cell svg{display:block}
+  .cap{font-size:22px;padding:10px 8px 14px;color:#c9c4b6}
+  .pal{display:flex;gap:10px;padding:0 60px}
+  .sw{width:100px;text-align:center;font-size:16px;color:#9aa0ad}
+  .sw div{height:60px;border-radius:10px;margin-bottom:6px}
+</style></head><body><div id="sheet"></div>
+<script src="assets.js"></script>
+<script>
+const Z = ZF, S = document.getElementById('sheet');
+const bgPanel = `<defs><linearGradient id="pg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#151a2b"/><stop offset=".8" stop-color="#22202a"/><stop offset="1" stop-color="#1a2416"/></linearGradient></defs><rect width="100%" height="100%" fill="url(#pg)"/>`;
+function cell(w, h, inner, cap, gx, gy, sc = 1, raw = false) {
+  return `<div class="cell"><svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${raw ? '' : bgPanel}
+    ${raw ? inner : `<rect y="${gy}" width="${w}" height="${h - gy}" fill="#182014"/><g transform="translate(${gx},${gy}) scale(${sc})">${inner}</g>`}</svg><div class="cap">${cap}</div></div>`;
+}
+let html = `<h1>Ферма. Ночь. <span>Лист персонажей и фонов</span></h1>
+<div class="sub">Плоский 2D-стиль, тёмная палитра, тёплое зарево города как единственный яркий источник. Все фигуры собраны из «суставов», поэтому руки, ноги и головы анимируются.</div>`;
+
+html += `<h2>1 · Выживший (рассказчик в кадре)</h2><div class="row">`;
+html += cell(300, 380, Z.farmer(), 'стоит', 150, 340, 1.4);
+html += cell(300, 380, Z.farmer({ legL: 24, legR: -24, armL: [-24, 10], armR: [24, -10] }), 'идёт', 150, 340, 1.4);
+html += cell(300, 380, Z.farmer({ armR: [150, 25], item: 'hammer', itemRot: -60 }), 'заколачивает', 150, 340, 1.4);
+html += cell(300, 380, Z.farmer({ armR: [-4, 0], item: 'bucket' }), 'с ведром', 150, 340, 1.4);
+html += cell(300, 380, Z.farmer({ armR: [40, 135], finger: true }), '«тсс» (шёпот)', 150, 340, 1.4);
+html += cell(300, 380, Z.farmer({ armR: [130, 50], armL: [-130, -50], binoculars: true }), 'наблюдает в бинокль', 150, 340, 1.4);
+html += cell(300, 380, Z.farmer({ armR: [30, 10], item: 'lantern', lit: true }), 'фонарь (ошибка!)', 150, 340, 1.4);
+html += `</div>`;
+
+html += `<h2>2 · Заражённые</h2><div class="row">`;
+html += cell(300, 380, Z.zombie({ phase: 0 }), 'идёт, шаг 1', 150, 340, 1.4);
+html += cell(300, 380, Z.zombie({ phase: 1.6 }), 'идёт, шаг 2', 150, 340, 1.4);
+html += cell(300, 380, Z.zombie({ reach: 0, headTilt: 30 }), 'стоит, «слушает»', 150, 340, 1.4);
+html += cell(700, 380, `<rect width="700" height="380" fill="#151a2b"/><ellipse cx="350" cy="380" rx="420" ry="150" fill="#ff6a2b" opacity=".35"/><g transform="translate(0,330)">${Z.crowd(22, 700, 2, '#05070c', 0.55)}</g><rect y="330" width="700" height="50" fill="#10160f"/>`, 'толпа вдали (силуэты на фоне зарева)', 0, 0, 1, true);
+html += `</div>`;
+
+html += `<h2>3 · Животные</h2><div class="row">`;
+html += cell(240, 260, Z.goose(), 'гусь спокоен', 110, 230, 1.6);
+html += cell(240, 260, Z.goose({ peck: true }), 'гусь клюёт', 100, 230, 1.6);
+html += cell(240, 260, Z.goose({ alarm: true }), 'гусь кричит (тревога)', 100, 230, 1.6);
+html += cell(300, 260, Z.dog(), 'собака', 140, 230, 1.6);
+html += cell(300, 260, Z.dog({ bark: true }), 'собака лает', 140, 230, 1.6);
+html += cell(380, 260, Z.cow(), 'корова (скот)', 180, 230, 1.4);
+html += `</div>`;
+
+html += `<h2>4 · Объекты</h2><div class="row">`;
+html += cell(400, 330, Z.gate(0, { locked: true }), 'ворота закрыты + замок', 200, 300, 1);
+html += cell(400, 330, Z.gate(0.7), 'ворота открыты', 200, 300, 1);
+html += cell(320, 330, Z.well({ rope: 30, water: 1 }), 'колодец', 160, 300, 1);
+html += cell(460, 560, Z.house({ lights: [1, 0, 1, 1] }), 'дом: свет горит', 230, 530, 1);
+html += cell(460, 560, Z.house({ boards: 1 }), 'дом: укреплён, темно', 230, 530, 1);
+html += `</div><div class="row" style="margin-top:24px">`;
+html += cell(300, 220, Z.generator({ on: true }), 'генератор работает', 150, 190, 1.3);
+html += cell(300, 220, Z.generator({ on: false }), 'генератор выключен', 150, 190, 1.3);
+html += cell(420, 220, Z.foodPile(), 'вся еда', 190, 190, 1.2);
+html += cell(320, 220, [0,1,2,3,4,5].map(i=>Z.ration(-90 + (i%3)*90, -(Math.floor(i/3))*46, 1.2)).join(''), 'порции', 160, 190, 1);
+html += cell(420, 220, Z.barn(), 'хлев', 210, 200, .6);
+html += cell(420, 220, Z.fence(400), 'забор', 10, 190, 1);
+html += `</div>`;
+
+const th = (inner, cap) => `<div class="cell"><svg width="378" height="672" viewBox="0 0 1080 1920">${inner}</svg><div class="cap">${cap}</div></div>`;
+const farmScene = (o) => Z.bgFarm(o) +
+  `<g transform="translate(260,1240) scale(.9)">${Z.barn()}</g>
+   <g transform="translate(800,1260) scale(.75)">${Z.house({ lights: o.lights || [0,0,0,0], boards: o.boards || 0 })}</g>
+   <g transform="translate(0,1380)">${Z.fence(1080)}</g>
+   <g transform="translate(540,1400) scale(.9)">${Z.gate(o.gate ?? 0, { locked: true })}</g>
+   <g transform="translate(200,1650)">${Z.well({ rope: 20 })}</g>
+   <g transform="translate(560,1760) scale(1.6)">${Z.farmer()}</g>
+   <g transform="translate(820,1780) scale(1.4)">${Z.goose({ alarm: o.alarm })}</g>
+   <g transform="translate(920,1800) scale(1.3)">${Z.goose({ peck: !o.alarm })}</g>
+   <g transform="translate(380,1820) scale(1.4)">${Z.dog({ bark: o.alarm })}</g>`;
+html += `<h2>5 · Фоны (9:16)</h2><div class="row">`;
+html += th(farmScene({ id: 'a', fire: .5 }), 'ферма ночью, зарево города');
+html += th(farmScene({ id: 'b', fire: .9, crowdN: 26, alarm: true, boards: 1 }), 'заражённые на горизонте');
+html += th(Z.bgCity({ id: 'c' }), 'город (вступление)');
+html += th(Z.bgInterior() + `<g transform="translate(400,1700) scale(2)">${Z.farmer({ armR: [40,135], finger: true })}</g>`, 'второй этаж, ночь');
+html += th(farmScene({ id: 'e', fire: .3, dark: .55 }), 'финал: полная темнота');
+html += `</div>`;
+
+html += `<h2>6 · Графика ролика</h2><div class="row">`;
+html += th(farmScene({ id: 'g', fire: .5 }) + `<rect width="1080" height="1920" fill="#000" opacity=".35"/>
+  <circle cx="540" cy="520" r="210" fill="#ffb020"/><text x="540" y="610" font-family="Inter Display" font-weight="900" font-size="270" text-anchor="middle" fill="#0a0c12">1</text>
+  <text x="540" y="840" font-family="Inter Display" font-weight="900" font-size="78" text-anchor="middle" fill="#fff" letter-spacing="4">ERSTENS</text>
+  <rect x="60" y="1500" width="960" height="190" rx="24" fill="#000" opacity=".55"/>
+  <text x="540" y="1625" font-family="Inter Display" font-weight="900" font-size="92" text-anchor="middle" fill="#fff" stroke="#000" stroke-width="10" paint-order="stroke">Tor <tspan fill="#ffb020">zu</tspan>, Tiere <tspan fill="#ffb020">rein</tspan>.</text>`, 'номер совета + субтитры по словам');
+html += th(`<rect width="1080" height="1920" fill="#07080c"/>
+  <text x="540" y="780" font-family="Inter Display" font-weight="800" font-size="92" text-anchor="middle" fill="#fff">Mehr solcher</text>
+  <text x="540" y="890" font-family="Inter Display" font-weight="800" font-size="92" text-anchor="middle" fill="#fff">Animationen im</text>
+  <text x="540" y="1000" font-family="Inter Display" font-weight="800" font-size="92" text-anchor="middle" fill="#fff">Telegram-Kanal</text>
+  <text x="540" y="1200" font-family="Inter Display" font-weight="900" font-size="176" text-anchor="middle" fill="#ffb020" textLength="1000" lengthAdjust="spacingAndGlyphs">@Claude306</text>`, 'финальная карточка');
+html += `<div style="padding:10px 20px"><div style="font-size:26px;font-weight:800;margin:10px 0 16px">Палитра</div><div class="pal" style="padding:0;flex-wrap:wrap;width:560px">` +
+  [['#070a14','небо'],['#2a1a24','горизонт'],['#ff6a2b','зарево'],['#ffb020','акцент'],['#1a2416','поле'],['#5a3f26','дерево'],['#b5832f','выживший'],['#8fa37a','заражённые'],['#e9e6dc','гуси'],['#ff4d3d','опасность']]
+  .map(([c,n])=>`<div class="sw"><div style="background:${c}"></div>${n}</div>`).join('') + `</div></div>`;
+html += `</div><div style="height:60px"></div>`;
+S.innerHTML = html;
+</script></body></html>
