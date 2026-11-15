@@ -7,6 +7,7 @@ import {DialogScene} from './Dialog';
 import {MapScene} from './MapStory';
 import {HauptstadtScene} from './Hauptstadt';
 import {EmuScene} from './Emu';
+import {NapoleonScene} from './Napoleon';
 import {StoryScene} from './Story';
 
 type Scene = (typeof timeline.scenes)[number];
@@ -149,7 +150,7 @@ const Captions: React.FC<{t: number; fps: number; frame: number}> = ({t, fps, fr
   const longest = Math.max(...chunk.map((w) => w.w.length));
   const size = Math.min(62, Math.floor(1000 / Math.max(longest, 1)));
   return (
-    <div style={{position: 'absolute', top: 1300, left: 60, right: 60, textAlign: 'center', fontFamily: FONT, fontWeight: 900, fontSize: size, lineHeight: 1.2, textTransform: 'uppercase'}}>
+    <div style={{position: 'absolute', top: 1430, left: 60, right: 60, textAlign: 'center', fontFamily: FONT, fontWeight: 900, fontSize: size, lineHeight: 1.2, textTransform: 'uppercase'}}>
       {chunk.map((w, k) => {
         const active = k === cur;
         return (
@@ -174,7 +175,8 @@ export const Main: React.FC = () => {
   const theme = (timeline as any).theme ?? 'schlaf';
   return (
     <AbsoluteFill style={{transform: `translateX(${shake}px)`}}>
-      {theme === 'map' && (timeline as any).style === 'emu' ? <EmuScene frame={frame} fps={fps} />
+      {theme === 'map' && (timeline as any).style === 'napoleon' ? <NapoleonScene frame={frame} fps={fps} />
+        : theme === 'map' && (timeline as any).style === 'emu' ? <EmuScene frame={frame} fps={fps} />
         : theme === 'map' && (timeline as any).style === 'flat' ? <HauptstadtScene frame={frame} fps={fps} />
         : theme === 'map' ? <MapScene frame={frame} fps={fps} />
         : theme === 'story' ? <StoryScene frame={frame} fps={fps} />

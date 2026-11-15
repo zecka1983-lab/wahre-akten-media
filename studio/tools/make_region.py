@@ -35,6 +35,7 @@ img.save(R / f"video/public/map/{name}.jpg", quality=92)
 d = json.load(open(R / "assets/map/states.geojson"))
 st = {f["properties"]["name"]: shape(f["geometry"]) for f in d["features"] if f["properties"].get("adm0_a3") == iso}
 def path(g, tol=0.004):
+    if g.is_empty: return ""
     g = g.simplify(tol)
     polys = [g] if g.geom_type == "Polygon" else [p for p in g.geoms if p.area > 0.01]
     return " ".join("M" + " L".join(f"{(x - LON0) * C * K:.1f} {(LATT - y) * K:.1f}" for x, y in p.exterior.coords) + " Z" for p in polys)

@@ -1,0 +1,21 @@
+{
+ "title": "Warum verlor Napoleon in Russland?",
+ "theme": "map",
+ "style": "napoleon",
+ "voice": "Leander",
+ "music": {"mood": "mystery", "resolve": "nend", "tick": ["nwinter"], "pulse": [], "riser": ["nmoscow"], "hit": true, "swoosh": false, "pops": true},
+ "scenes": [
+  {"cut": "nhook", "text": "Warum hat Napoleon in Russland verloren? Ganz einfach: Er hat Moskau erobert. Und genau das war sein Fehler.", "ru": "Почему Наполеон проиграл в России? Всё просто: он взял Москву. И именно это было его ошибкой."},
+  {"cut": "nstart", "text": "Juni achtzehnhundertzwölf. Napoleon beherrscht fast ganz Europa. Nur Russland macht nicht mit.", "caption": "Juni 1812. Napoleon beherrscht fast ganz Europa. Nur Russland macht nicht mit.", "ru": "Июнь 1812 года. Наполеон правит почти всей Европой. Только Россия не подчиняется."},
+  {"cut": "ncross", "text": "Also überquert er mit über vierhunderttausend Soldaten die Memel. Die größte Armee, die Europa bis dahin gesehen hat.", "caption": "Also überquert er mit über 400.000 Soldaten die Memel. Die größte Armee, die Europa bis dahin gesehen hat.", "ru": "И он переходит Неман с более чем четырёхсоттысячной армией. Самой большой, какую Европа видела к тому времени."},
+  {"cut": "nretreat", "text": "Doch die Russen kämpfen nicht. Sie ziehen sich immer weiter zurück und verbrennen alles hinter sich. Felder, Dörfer, Vorräte.", "ru": "Но русские не принимают бой. Они отступают всё дальше и сжигают всё за собой: поля, деревни, запасы."},
+  {"cut": "nhunger", "text": "Napoleons Armee findet nichts zu essen. Tausende sterben an Hunger und Krankheiten, noch bevor es eine große Schlacht gibt.", "ru": "Армия Наполеона не находит еды. Тысячи умирают от голода и болезней ещё до большого сражения."},
+  {"cut": "nborodino", "text": "Im September kommt es bei Borodino doch zur Schlacht. Zehntausende fallen auf beiden Seiten. Die Russen ziehen wieder ab.", "ru": "В сентябре у Бородино всё-таки происходит сражение. Десятки тысяч погибают с обеих сторон. Русские снова отходят."},
+  {"cut": "nmoscow", "text": "Dann endlich Moskau. Napoleon marschiert ein und wartet darauf, dass der Zar um Frieden bittet.", "ru": "И наконец Москва. Наполеон входит в город и ждёт, что царь попросит мира."},
+  {"cut": "nfire", "text": "Aber die Stadt ist fast leer. Und dann brennt sie. Ein großer Teil Moskaus geht in Flammen auf.", "ru": "Но город почти пуст. А потом он горит. Большая часть Москвы сгорает."},
+  {"cut": "nwait", "text": "Der Zar antwortet nicht. Napoleon wartet über einen Monat. Dann muss er umkehren.", "ru": "Царь не отвечает. Наполеон ждёт больше месяца. Потом ему приходится повернуть назад."},
+  {"cut": "nwinter", "text": "Und jetzt kommt der russische Winter. Schnee, Eis, minus dreißig Grad. Pferde sterben, Kanonen bleiben stecken.", "ru": "И тут приходит русская зима. Снег, лёд, минус тридцать. Гибнут лошади, пушки застревают."},
+  {"cut": "nberezina", "text": "An der Beresina wird die Armee beim Überqueren des Flusses angegriffen. Es wird zur Katastrophe.", "ru": "На Березине армию атакуют во время переправы через реку. Это становится катастрофой."},
+  {"cut": "nend", "text": "Von über vierhunderttausend kommen nur wenige zehntausend zurück. Napoleon hat Moskau erobert und dabei seine Armee verloren. Hättest du an seiner Stelle umgedreht?", "caption": "Von über 400.000 kommen nur wenige zehntausend zurück. Napoleon hat Moskau erobert und dabei seine Armee verloren. Hättest du an seiner Stelle umgedreht?", "ru": "Из более чем четырёхсот тысяч вернулись лишь несколько десятков тысяч. Наполеон взял Москву и потерял армию. А ты бы на его месте повернул назад?"}
+ ]
+}
