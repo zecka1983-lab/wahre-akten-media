@@ -1,0 +1,10 @@
+[serious] Wenn dich die Zombie-Apokalypse auf einem Bauernhof erwischt – bleib dort. [pause] In der Stadt ist es jetzt am gefährlichsten.
+[tense] Dort leben Millionen Menschen. Also Millionen Infizierte. Die Straßen sind dicht, die Läden leer. [pause] Und du hast, worum man in der Stadt schon kämpft: Wasser. Essen. Und Abstand.
+[short pause] Erstens. Schließ das Tor und treib die Tiere rein. [whispers] Infizierte reagieren auf Bewegung und Lärm.
+[short pause] Zweitens. Prüf den Brunnen. Wasser geht vor. Ohne Wasser hältst du keine drei Tage durch.
+[short pause] Drittens. Sammle alle Vorräte und teil sie in Rationen ein. [pause] Auch wenn es nach viel aussieht.
+[short pause] Viertens. Sichere ein Haus, nicht den ganzen Hof. Eine Horde hält kein Zaun auf. Vernagle die Fenster unten – und schlaf oben.
+[short pause] Fünftens. [whispers] Nachts kein Licht. Kein Generator. [serious] Licht sieht man kilometerweit, und Lärm hört man noch weiter.
+[short pause] Sechstens. Lass die Tiere für dich arbeiten. Gänse und Hunde schlagen Alarm, bevor du überhaupt jemanden siehst.
+[pause] [serious] Und das Wichtigste: Öffne niemandem das Tor. Beobachte erst aus der Ferne. [pause] [tense] Auch wer gebissen wurde, wird um Hilfe bitten.
+[long pause] [calm] Du hältst hier Monate durch. [pause] [whispers] Aber eines Nachts schreien die Gänse. [long pause] Und dann verstummen sie… genauso plötzlich.
