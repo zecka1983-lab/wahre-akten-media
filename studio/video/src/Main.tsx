@@ -5,6 +5,8 @@ import '@fontsource/montserrat/700.css';
 import timeline from './timeline.json';
 import {DialogScene} from './Dialog';
 import {MapScene} from './MapStory';
+import {HauptstadtScene} from './Hauptstadt';
+import {EmuScene} from './Emu';
 import {StoryScene} from './Story';
 
 type Scene = (typeof timeline.scenes)[number];
@@ -145,14 +147,14 @@ const Captions: React.FC<{t: number; fps: number; frame: number}> = ({t, fps, fr
   chunk.forEach((w, k) => { if (t >= w.t) cur = k; });
   const pop = spring({frame: frame - Math.round(chunk[cur].t * fps), fps, config: {damping: 12, stiffness: 220}});
   const longest = Math.max(...chunk.map((w) => w.w.length));
-  const size = Math.min(84, Math.floor(1250 / Math.max(longest, 1)));
+  const size = Math.min(62, Math.floor(1000 / Math.max(longest, 1)));
   return (
-    <div style={{position: 'absolute', top: 1530, left: 50, right: 50, textAlign: 'center', fontFamily: FONT, fontWeight: 900, fontSize: size, lineHeight: 1.2, textTransform: 'uppercase'}}>
+    <div style={{position: 'absolute', top: 1300, left: 60, right: 60, textAlign: 'center', fontFamily: FONT, fontWeight: 900, fontSize: size, lineHeight: 1.2, textTransform: 'uppercase'}}>
       {chunk.map((w, k) => {
         const active = k === cur;
         return (
           <span key={`${ci}-${k}`} style={{display: 'inline-block', margin: '0 16px', color: active ? '#ffd84d' : 'white', WebkitTextStroke: '6px #1d1d2b', paintOrder: 'stroke fill', transform: active ? `scale(${0.9 + 0.12 * pop})` : 'scale(1)', textShadow: '0 8px 0 #1d1d2b'}}>
-            {w.w}
+            {w.w.replace(/[.,:;!?…„“"»«]/g, '')}
           </span>
         );
       })}
@@ -172,7 +174,9 @@ export const Main: React.FC = () => {
   const theme = (timeline as any).theme ?? 'schlaf';
   return (
     <AbsoluteFill style={{transform: `translateX(${shake}px)`}}>
-      {theme === 'map' ? <MapScene frame={frame} fps={fps} />
+      {theme === 'map' && (timeline as any).style === 'emu' ? <EmuScene frame={frame} fps={fps} />
+        : theme === 'map' && (timeline as any).style === 'flat' ? <HauptstadtScene frame={frame} fps={fps} />
+        : theme === 'map' ? <MapScene frame={frame} fps={fps} />
         : theme === 'story' ? <StoryScene frame={frame} fps={fps} />
         : theme === 'dialog' ? <DialogScene frame={frame} fps={fps} />
         : theme === 'wasser' ? <WasserScene k={tired} frame={frame} fps={fps} />

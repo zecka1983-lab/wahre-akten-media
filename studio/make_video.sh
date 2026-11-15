@@ -32,7 +32,7 @@ if [ "$MODE" = preview ]; then
   echo "Превью готово: $PREVIEW/${NAME}_${LANG_V}_preview.mp4. Ждём согласия."
 elif [ "$MODE" = final ]; then
   [ -f "../$P/APPROVED" ] || { echo "Превью ещё не одобрено. Финал не делаю."; exit 1; }
-  npx remotion render src/index.ts Main "../$FINAL/${NAME}.mp4" --codec=h264 --crf=18 $BR
+  npx remotion render src/index.ts Main "../$FINAL/${NAME}.mp4" --codec=h264 --crf=16 ${SCALE:+--scale=$SCALE} $BR
   # своя фоновая музыка, если задана в script.json ("music"): тихо, под голосом
   if python3 -c "import json,sys; sys.exit(0 if json.load(open('../$P/script.json')).get('music') else 1)"; then
     (cd .. && python3 tools/make_music.py "$P")
@@ -41,7 +41,7 @@ elif [ "$MODE" = final ]; then
       "../$FINAL/${NAME}_m.mp4" && mv "../$FINAL/${NAME}_m.mp4" "../$FINAL/${NAME}.mp4"
   fi
   # сжатие под TikTok (~20 МБ на минуту+): владелец экономит трафик, TikTok всё равно пережимает
-  ffmpeg -v error -y -i "../$FINAL/${NAME}.mp4" -c:v libx264 -preset slow -crf ${CRF:-23} -maxrate ${MAXRATE:-2500k} -bufsize 10000k \
+  ffmpeg -v error -y -i "../$FINAL/${NAME}.mp4" -c:v libx264 -preset slow -crf ${CRF:-23} -maxrate ${MAXRATE:-2500k} -bufsize 20000k \
     -pix_fmt yuv420p -c:a aac -b:a 160k -movflags +faststart "../$FINAL/${NAME}_tmp.mp4" && mv "../$FINAL/${NAME}_tmp.mp4" "../$FINAL/${NAME}.mp4"
   echo "Готово: $FINAL/${NAME}.mp4"
 else

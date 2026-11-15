@@ -1,0 +1,92 @@
+{
+ "title": "Der Emu-Krieg",
+ "theme": "map",
+ "style": "emu",
+ "voice": "Lars",
+ "scenes": [
+  {
+   "cut": "ehook",
+   "text": "Eine Armee mit Maschinengewehren zieht in den Krieg. Gegen Vögel. Und verliert.",
+   "ru": "Армия с пулемётами идёт на войну. Против птиц. И проигрывает."
+  },
+  {
+   "cut": "eaus",
+   "text": "Australien, neunzehnhundertzweiunddreißig. Im Westen des Landes bauen Farmer Weizen an.",
+   "ru": "Австралия, 1932 год. На западе страны фермеры выращивают пшеницу.",
+   "caption": "Australien, 1932. Im Westen des Landes bauen Farmer Weizen an."
+  },
+  {
+   "cut": "eherd",
+   "text": "Dann kommen die Emus. Rund zwanzigtausend Stück. Sie fressen die Felder leer und trampeln Zäune nieder.",
+   "ru": "Потом приходят эму. Около двадцати тысяч. Они объедают поля и топчут заборы.",
+   "caption": "Dann kommen die Emus. Rund 20.000 Stück. Sie fressen die Felder leer und trampeln Zäune nieder."
+  },
+  {
+   "cut": "esize",
+   "text": "Und Emus sind keine kleinen Vögel. Sie werden fast zwei Meter groß.",
+   "ru": "А эму — птицы совсем не маленькие. Они вырастают почти до двух метров."
+  },
+  {
+   "cut": "earmy",
+   "text": "Die Farmer rufen die Armee. Die schickt einen Offizier, zwei Soldaten, zwei Maschinengewehre und zehntausend Schuss Munition.",
+   "ru": "Фермеры зовут армию. Та присылает майора, двух солдат, два пулемёта и десять тысяч патронов.",
+   "caption": "Die Farmer rufen die Armee. Die schickt einen Offizier, zwei Soldaten, zwei Maschinengewehre und 10.000 Schuss Munition."
+  },
+  {
+   "cut": "escatter",
+   "text": "Doch sobald geschossen wird, rennen die Emus in alle Richtungen. Bis zu fünfzig Kilometer pro Stunde.",
+   "ru": "Но как только начинается стрельба, эму разбегаются во все стороны. До пятидесяти километров в час.",
+   "caption": "Doch sobald geschossen wird, rennen die Emus in alle Richtungen. Bis zu 50 Kilometer pro Stunde."
+  },
+  {
+   "cut": "etruck",
+   "text": "Der Offizier montiert ein Gewehr auf einen Lastwagen. Aber der holpert so sehr, dass keiner trifft.",
+   "ru": "Майор ставит пулемёт на грузовик. Но тот так трясётся, что никто не попадает."
+  },
+  {
+   "cut": "ejam",
+   "text": "Dann klemmt auch noch ein Maschinengewehr.",
+   "ru": "А потом ещё и пулемёт заклинивает."
+  },
+  {
+   "cut": "ecount",
+   "text": "Nach einem Monat die Bilanz: fast zehntausend Schuss, neunhundertsechsundachtzig tote Emus. Zehn Kugeln pro Vogel.",
+   "ru": "Через месяц итог: почти десять тысяч патронов, девятьсот восемьдесят шесть убитых эму. Десять пуль на птицу.",
+   "caption": "Nach einem Monat die Bilanz: fast 10.000 Schuss, 986 tote Emus. Zehn Kugeln pro Vogel."
+  },
+  {
+   "cut": "equote",
+   "text": "Der Offizier ist beeindruckt. Er sagt sinngemäß: Mit Soldaten so zäh wie diese Vögel könnte man jede Armee der Welt besiegen.",
+   "ru": "Майор впечатлён. Он говорит примерно так: с солдатами, такими же живучими, как эти птицы, можно победить любую армию мира."
+  },
+  {
+   "cut": "eretreat",
+   "text": "Die Armee zieht ab. Die Emus bleiben. Die Zeitungen nennen das Ganze spöttisch den Emu-Krieg.",
+   "ru": "Армия уходит. Эму остаются. Газеты насмешливо называют всё это «Войной с эму»."
+  },
+  {
+   "cut": "ebounty",
+   "text": "Später versuchen es die Farmer anders: Für jeden Emu gibt es eine Prämie. Und das funktioniert viel besser als jedes Maschinengewehr.",
+   "ru": "Позже фермеры пробуют иначе: за каждого эму платят премию. И это работает гораздо лучше любого пулемёта."
+  },
+  {
+   "cut": "eend",
+   "text": "Ein Krieg gegen Vögel, und die Vögel haben gewonnen. Wer hätte bei dir gewonnen?",
+   "ru": "Война против птиц — и птицы победили. А кто победил бы у тебя?"
+  }
+ ],
+ "music": {
+  "mood": "mystery",
+  "resolve": "eretreat",
+  "tick": [
+   "ecount"
+  ],
+  "pulse": [],
+  "riser": [
+   "escatter"
+  ],
+  "hit": true,
+  "swoosh": false,
+  "pops": true
+ }
+}

@@ -18,7 +18,7 @@ el_voice = sys.argv[3] if len(sys.argv) > 3 else None
 el_key = Path(os.environ["EL_KEY_FILE"]).read_text().strip() if el_voice and os.environ.get("EL_KEY_FILE") else None
 cache = Path(__file__).parent / "el_cache"; cache.mkdir(exist_ok=True)
 # как на сайте ElevenLabs по умолчанию + чуть быстрее (владелец сравнил на слух)
-VOICE_SETTINGS = {"stability": 0.5, "similarity_boost": 0.75, "style": 0.0, "use_speaker_boost": True, "speed": 1.04}
+VOICE_SETTINGS = {"stability": 0.5, "similarity_boost": 0.75, "style": 0.0, "use_speaker_boost": True, "speed": float(os.environ.get("EL_SPEED", "1.04"))}
 
 
 def elevenlabs(text: str, wav: Path, voice_id: str):
@@ -46,7 +46,7 @@ def elevenlabs(text: str, wav: Path, voice_id: str):
     return out
 
 
-def tighten(path: Path, max_gap: float = 0.22, thr_db: float = -40.0):
+def tighten(path: Path, max_gap: float = float(os.environ.get("MAX_GAP", "0.22")), thr_db: float = -40.0):
     """Сжимает паузы длиннее max_gap до max_gap (темп для соцсетей).
     Возвращает функцию: время в исходном звуке -> время в сжатом (для субтитров)."""
     import numpy as np
@@ -87,7 +87,7 @@ def tighten(path: Path, max_gap: float = 0.22, thr_db: float = -40.0):
         return tt - shift
     return remap
 
-FPS, PAUSE = 30, 0.2  # пауза между сценами, сек
+FPS, PAUSE = 30, float(os.environ.get("PAUSE", "0.2"))  # пауза между сценами, сек
 # надписи в плашке, которые надо перевести для русского превью
 BIG_RU = {" h": " ч", "DU?": "А ТЫ?", "FOLGEN": "ПОДПИШИСЬ", "Tage": "дней", "NACHT": "НОЧЬ", "MEER": "МОРЕ",
           "KORALLEN": "КОРАЛЛЫ", "TURTLES": "ЧЕРЕПАХИ", "ACHSE": "ОСЬ", "KLIMA": "КЛИМАТ", "MOND": "ЛУНА"}
@@ -166,6 +166,6 @@ subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i
                 "-ar", "44100", "-ac", "1", str(out)], check=True)
 
 data = {"title": script["title"], "theme": script.get("theme", proj.name), "lang": lang,
-        "showRu": bool(os.environ.get("SHOW_RU")), "hookText": script.get("hook_text", ""), "fps": FPS, "duration": round(t, 3), "scenes": timeline}
+        "showRu": bool(os.environ.get("SHOW_RU")), "hookText": script.get("hook_text", ""), "style": script.get("style", ""), "fps": FPS, "duration": round(t, 3), "scenes": timeline}
 (proj / "timeline.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
 print(f"Готово: {out}  язык {lang}, длительность {t:.1f} c")

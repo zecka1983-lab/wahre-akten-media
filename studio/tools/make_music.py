@@ -82,6 +82,16 @@ if cfg.get("swoosh"):
             noise = np.convolve(rng.standard_normal(n), np.ones(12) / 12, mode="same")
             sig[i:i + n] += 0.45 * env * noise
 
+# «поп» на каждой новой раскадровке (появление значка/надписи): короткий мягкий щелчок-капля
+if cfg.get("pops"):
+    n = int(0.07 * SR); tt = np.arange(n) / SR
+    pop = np.sin(2 * np.pi * np.cumsum(np.linspace(950, 380, n)) / SR) * np.exp(-tt * 55)
+    times = sorted({round(c["t"], 2) for sc_ in tl["scenes"] for c in (sc_.get("cuts") or [])} | {round(sc_["start"], 2) for sc_ in tl["scenes"]})
+    for tc in times:
+        i = int(tc * SR)
+        if 0 < i and i + n < len(sig):
+            sig[i:i + n] += 0.55 * pop
+
 # начало и конец: с ударом — без затухания в начале
 fade_in = 0.03 if cfg.get("hit") else 2.0
 fade = np.minimum(1, np.minimum(t / fade_in, (dur - t) / 2.5))

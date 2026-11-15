@@ -1,0 +1,91 @@
+{
+ "title": "Warum ist Berlin Hauptstadt und nicht Bonn?",
+ "theme": "map",
+ "style": "flat",
+ "voice": "Leander",
+ "music": {
+  "mood": "mystery",
+  "resolve": "hresult",
+  "tick": [
+   "hdebate"
+  ],
+  "pulse": [],
+  "riser": [
+   "hvote"
+  ],
+  "hit": true,
+  "swoosh": false,
+  "pops": true
+ },
+ "scenes": [
+  {
+   "cut": "hhook",
+   "text": "Warum ist Berlin unsere Hauptstadt und nicht Bonn? Ganz einfach: wegen 18 Stimmen.",
+   "ru": "Почему наша столица Берлин, а не Бонн? Всё просто: из-за восемнадцати голосов."
+  },
+  {
+   "cut": "h49",
+   "text": "1949 wird Deutschland geteilt. Der Westen braucht schnell eine Hauptstadt und nimmt eine kleine Stadt am Rhein: Bonn. Nur vorläufig, heißt es.",
+   "ru": "В 1949 году Германию делят. Западу срочно нужна столица, и берут маленький город на Рейне — Бонн. Только временно, говорят."
+  },
+  {
+   "cut": "h40",
+   "text": "Aus vorläufig werden über 40 Jahre.",
+   "ru": "Из «временно» получается больше сорока лет."
+  },
+  {
+   "cut": "h90",
+   "text": "1990 kommt die Einheit. Und plötzlich gibt es zwei Kandidaten.",
+   "ru": "В 1990 году объединение. И вдруг кандидатов двое."
+  },
+  {
+   "cut": "hvs",
+   "text": "Berlin, die alte Hauptstadt und das Symbol der Teilung. Gegen Bonn, wo Parlament und Ministerien schon fertig eingerichtet sind.",
+   "ru": "Берлин — старая столица и символ раскола. Против Бонна, где парламент и министерства уже обустроены."
+  },
+  {
+   "cut": "hpoll",
+   "text": "Vier Tage vor der Abstimmung werden alle Abgeordneten befragt. Ergebnis: klare Mehrheit für Bonn.",
+   "ru": "За четыре дня до голосования опрашивают всех депутатов. Итог: явное большинство за Бонн."
+  },
+  {
+   "cut": "hdebate",
+   "text": "Dann kommt der zwanzigste Juni neunzehnhunderteinundneunzig. Zwölf Stunden Debatte im Bundestag in Bonn.",
+   "ru": "А потом 20 июня 1991 года. Двенадцать часов дебатов в бундестаге в Бонне.",
+   "caption": "Dann kommt der 20. Juni 1991. Zwölf Stunden Debatte im Bundestag in Bonn."
+  },
+  {
+   "cut": "hvote",
+   "text": "Am späten Abend wird gezählt.",
+   "ru": "Поздно вечером подсчёт."
+  },
+  {
+   "cut": "hresult",
+   "text": "Dreihundertachtunddreißig für Berlin. Dreihundertzwanzig für Bonn.",
+   "ru": "Триста тридцать восемь за Берлин. Триста двадцать за Бонн.",
+   "caption": "338 für Berlin. 320 für Bonn."
+  },
+  {
+   "cut": "hirony",
+   "text": "Nur 18 Stimmen Unterschied. Und Bonn verliert ausgerechnet in Bonn.",
+   "ru": "Всего восемнадцать голосов разницы. И Бонн проигрывает именно в Бонне."
+  },
+  {
+   "cut": "hmove",
+   "text": "Neunzehnhundertneunundneunzig zieht der Bundestag nach Berlin in den Reichstag.",
+   "ru": "В 1999 году бундестаг переезжает в Берлин, в Рейхстаг.",
+   "caption": "1999 zieht der Bundestag nach Berlin in den Reichstag."
+  },
+  {
+   "cut": "hstay",
+   "text": "Aber Bonn geht nicht leer aus. Einige Bundesministerien sitzen bis heute dort. Ein eigenes Gesetz von neunzehnhundertvierundneunzig regelt das.",
+   "ru": "Но Бонн не остаётся ни с чем. Несколько федеральных министерств до сих пор там. Это закреплено отдельным законом 1994 года.",
+   "caption": "Aber Bonn geht nicht leer aus. Einige Bundesministerien sitzen bis heute dort. Ein eigenes Gesetz von 1994 regelt das."
+  },
+  {
+   "cut": "hend",
+   "text": "18 Stimmen, und unsere Hauptstadt wäre heute Bonn. Wärst du für Berlin oder für Bonn?",
+   "ru": "Восемнадцать голосов — и столицей сегодня был бы Бонн. А ты за Берлин или за Бонн?"
+  }
+ ]
+}

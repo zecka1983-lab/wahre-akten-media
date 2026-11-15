@@ -22,7 +22,7 @@ export const Tag: React.FC<{text: string; red?: string; x: number; y: number; si
   </div>
 );
 
-const Emoji: React.FC<{code: string; x: number; y: number; s: number; pop?: number; badge?: boolean}> = ({code, x, y, s, pop = 1, badge}) => (
+export const Emoji: React.FC<{code: string; x: number; y: number; s: number; pop?: number; badge?: boolean}> = ({code, x, y, s, pop = 1, badge}) => (
   <>
   {badge && <div style={{position: 'absolute', left: x - s * 0.62, top: y - s * 0.62, width: s * 1.24, height: s * 1.24, borderRadius: '50%', background: 'white', transform: `scale(${pop})`, boxShadow: '0 6px 14px rgba(0,0,0,0.35)'}} />}
   <Img src={staticFile(`map/${code}.webp`)} style={{position: 'absolute', left: x - s / 2, top: y - s / 2, width: s, height: s, transform: `scale(${pop})`, filter: 'drop-shadow(0 8px 10px rgba(0,0,0,0.4))'}} />
@@ -30,7 +30,7 @@ const Emoji: React.FC<{code: string; x: number; y: number; s: number; pop?: numb
 );
 
 // камера: точка мира (wx, wy) в центре кадра (540, 900) с зумом z
-const cam = (wx: number, wy: number, z: number) => `translate(${540 - wx * z}px, ${900 - wy * z}px) scale(${z})`;
+export const cam = (wx: number, wy: number, z: number) => `translate(${540 - wx * z}px, ${900 - wy * z}px) scale(${z})`;
 
 export const MapTest: React.FC<{shot: 'germany' | 'berlin'}> = ({shot}) => {
   const f = useCurrentFrame();
