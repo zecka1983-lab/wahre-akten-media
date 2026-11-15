@@ -9,7 +9,8 @@
   const lerp = (a, b, x) => a + (b - a) * x;
   const W = (word, n = 1) => { let k = 0; for (const w of WORDS) if (w.w.replace(/[^\wäöüßÄÖÜ-]/g, '') === word && ++k === n) return w.s; throw new Error('word ' + word); };
   const at = (x, y, s, inner, extra = '') => `<g transform="translate(${x},${y}) scale(${s})" ${extra}>${inner}</g>`;
-  const cam = (s, cx, cy, inner) => `<g transform="translate(540,960) scale(${s}) translate(${-cx},${-cy})">${inner}</g>`;
+  const cam = (s, cx, cy, inner) => { s = Math.max(1, s); cx = Math.min(Math.max(cx, 540 / s), 1080 - 540 / s); cy = Math.min(Math.max(cy, 960 / s), 1920 - 960 / s);
+    return `<g transform="translate(540,960) scale(${s}) translate(${-cx},${-cy})">${inner}</g>`; };
   const FONT = `font-family="Inter Display, Inter, sans-serif"`;
   const recolor = (svg, map) => { for (const [a, b] of map) svg = svg.split(a).join(b); return svg; };
 
@@ -388,12 +389,13 @@
     if (!ch) return '';
     const txt = ch.map(w => w.w).join(' ');
     const fs = Math.min(104, 990 / (txt.length * .58));
+    const act = ch.find(w => t >= w.s - .03 && t < w.e + .05);
     let sp = '';
     ch.forEach((w, i) => {
       const clean = w.w.replace(/[^\wäöüßÄÖÜ-]/g, '');
       const on = t >= w.s - .03, active = t >= w.s - .03 && t < w.e + .05;
       const col = DANGER.has(clean) ? C.red : KEY.has(clean) ? C.accent : NUMW.has(clean) ? C.accent : '#fff';
-      sp += `<tspan fill="${col}" opacity="${on ? 1 : .0}" ${active ? `font-size="${fs * 1.1}"` : ''}>${(i ? ' ' : '') + w.w}</tspan>`;
+      sp += `<tspan fill="${col}" opacity="${on ? 1 : .32}">${(i ? ' ' : '') + w.w}</tspan>`;
     });
     const pop = back(prog(t, ch[0].s - .05, ch[0].s + .12));
     return `<g transform="translate(540,1560) scale(${.85 + .15 * pop})"><text x="0" y="0" ${FONT} font-weight="900" font-size="${fs}" text-anchor="middle" stroke="#000" stroke-width="${fs * .14}" stroke-linejoin="round" paint-order="stroke">${sp}</text></g>`;
