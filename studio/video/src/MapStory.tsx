@@ -151,24 +151,25 @@ export const MapScene: React.FC<{frame: number; fps: number}> = ({frame, fps}) =
   const wallDraw = cut === 'stein' ? 1 : cut === 'wall' ? ease(Math.min(1, Math.max(0, (t - wordT(sc, /Mauer/)) / 2.2))) : cut === 'fall' ? 1 : 0;
   const wallGone = cut === 'fall' ? ease(Math.min(1, Math.max(0, (t - wordT(sc, /öffnet/, sc.dur * 0.6)) / 1.2))) : 0;
   const [sbx, sby] = S([BX, BY]);
+  const [wcx, wcy] = S(C.WBc);
+  const ringR = Math.max(46, (map as any).wbR * z) + 10 + pulse * 8;
   return (
     <AbsoluteFill style={{background: '#0a2a38', overflow: 'hidden'}}>
       <FontFaces />
       <AbsoluteFill style={{transform: cam(cx, cy, z), transformOrigin: '0 0'}}>
         <Img src={staticFile('map/europe.jpg')} style={{position: 'absolute', width: map.W, height: map.H, filter: `brightness(${1.35 - dim * 0.6}) saturate(${1.15 + dim * 0.2})`}} />
         <svg width={map.W} height={map.H} style={{position: 'absolute', overflow: 'visible'}}>
-          <path d={map.brd} fill="rgba(90,185,255,0.66)" stroke="white" strokeWidth={2.2 / z} strokeLinejoin="round" />
-          <path d={map.ddr} fill={`rgba(${Math.round(lerp(255, 90, unify))},${Math.round(lerp(85, 185, unify))},${Math.round(lerp(75, 255, unify))},${lerp(0.72, 0.66, unify)})`} stroke="white" strokeWidth={(2.2 / z) * (1 - unify)} strokeLinejoin="round" />
-          {(cut === 'sectors') && <path d={map.eb} fill="#6e0f16" stroke="white" strokeWidth={6 / z} />}
-          <path d={map.wb} fill="#ffd84d" stroke="#fff" strokeWidth={(zoomed ? 4 : 1.5) / z} opacity={0.8 + 0.2 * pulse} />
-          <path d={(map as any).stein} fill="#ffd84d" stroke={wallDraw > 0 ? '#2b2b2b' : '#fff'} strokeWidth={(wallDraw > 0 ? 14 : 3) / z} opacity={0.8 + 0.2 * pulse} />
+          <path d={map.brd} fill={`rgba(80,170,255,${lerp(0.34, 0.55, unify)})`} stroke="#e6f4ff" strokeWidth={2.2 / z} strokeLinejoin="round" style={{filter: "drop-shadow(0 0 5px rgba(90,180,255,1))"}} />
+          <path d={map.ddr} fill={`rgba(${Math.round(lerp(255, 80, unify))},${Math.round(lerp(70, 170, unify))},${Math.round(lerp(60, 255, unify))},${lerp(0.46, 0.62, unify)})`} stroke="#fff0ec" strokeWidth={(2.2 / z) * (1 - unify)} strokeLinejoin="round" style={{filter: `drop-shadow(0 0 4px rgba(${Math.round(lerp(255, 90, unify))},${Math.round(lerp(70, 180, unify))},${Math.round(lerp(50, 255, unify))},1))`}} />
+          {(cut === 'sectors') && <path d={map.eb} fill="#6e0f16" stroke="none" />}
+          <path d={map.wb} fill="#ffd84d" stroke="#fff" strokeWidth={(zoomed ? 5 : 1.5) / z} strokeLinejoin="round" />
+          {wallDraw > 0 && z > 40 && <path d={(map as any).stein} fill="none" stroke="#1d1d1d" strokeWidth={20 / z} strokeLinejoin="round" />}
+          <path d={(map as any).stein} fill="#ffd84d" stroke={z > 40 ? '#f2f2ee' : 'none'} strokeWidth={(wallDraw > 0 ? 14 : 4) / z} strokeLinejoin="round" />
           {/* Стена: рисуется по контуру */}
           {wallDraw > 0 && (
-            <g opacity={1 - wallGone * 0.85}>
-              <path d={map.wb} fill="none" stroke="#2b2b2b" strokeWidth={30 / z} pathLength={1} strokeLinecap="round"
-                strokeDasharray={wallGone > 0 ? `${0.02 * (1 - wallGone * 0.8)} ${0.02 * wallGone * 0.8 + 0.001}` : `${wallDraw} 1`} />
-              <path d={map.wb} fill="none" stroke="#e6e6e0" strokeWidth={20 / z} pathLength={1} strokeLinecap="round"
-                strokeDasharray={wallGone > 0 ? `${0.02 * (1 - wallGone * 0.8)} ${0.02 * wallGone * 0.8 + 0.001}` : `${wallDraw} 1`} />
+            <g opacity={1 - wallGone}>
+              <path d={map.wb} fill="none" stroke="#1d1d1d" strokeWidth={24 / z} pathLength={1} strokeLinecap={wallDraw < 1 ? "butt" : "round"} strokeLinejoin="round" strokeDasharray={`${wallDraw} 1`} />
+              <path d={map.wb} fill="none" stroke="#f2f2ee" strokeWidth={17 / z} pathLength={1} strokeLinecap={wallDraw < 1 ? "butt" : "round"} strokeLinejoin="round" strokeDasharray={`${wallDraw} 1`} />
             </g>
           )}
           {/* дороги в Западный Берлин: блокада и снова открыты */}
@@ -193,7 +194,7 @@ export const MapScene: React.FC<{frame: number; fps: number}> = ({frame, fps}) =
       </AbsoluteFill>
       {/* пульсирующее кольцо вокруг Западного Берлина на общих планах */}
       {!zoomed && cut !== 'candy' && (
-        <div style={{position: 'absolute', left: sbx - 46 - pulse * 14, top: sby - 46 - pulse * 14, width: 92 + pulse * 28, height: 92 + pulse * 28, borderRadius: '50%', border: '6px solid #ffd84d', boxShadow: '0 0 24px #ffd84d', opacity: 0.9 - pulse * 0.4}} />
+        <div style={{position: 'absolute', left: wcx - ringR, top: wcy - ringR, width: ringR * 2, height: ringR * 2, borderRadius: '50%', border: '5px solid #ffd84d', boxShadow: '0 0 18px rgba(255,216,77,0.8)', opacity: 0.95 - pulse * 0.3, boxSizing: 'border-box'}} />
       )}
 
       {cut === 'hook' && (
